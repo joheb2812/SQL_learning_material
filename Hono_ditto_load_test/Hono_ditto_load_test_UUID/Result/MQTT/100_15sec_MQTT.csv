@@ -1,0 +1,702 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1678951725855,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadba7c-c3b7-11ed-afa1-0242ac120002,9,0,0
+1678951725873,87,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadba7c-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951725968,101,Create the thing,204,No Content,Device registration 1-1,,true,,393,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadba7c-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951726076,10,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadbe1e-c3b7-11ed-afa1-0242ac120002,10,0,1
+1678951726087,83,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadbe1e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951726171,88,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadbe1e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951726260,10,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadbf72-c3b7-11ed-afa1-0242ac120002,10,0,0
+1678951726270,86,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadbf72-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951726357,91,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadbf72-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951726449,13,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadc08a-c3b7-11ed-afa1-0242ac120002,13,0,0
+1678951726462,84,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadc08a-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951726546,82,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadc08a-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951726629,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadc1ac-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951726636,82,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadc1ac-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951726719,86,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadc1ac-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951726806,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadc2c4-c3b7-11ed-afa1-0242ac120002,7,0,1
+1678951726813,84,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadc2c4-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951726897,79,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadc2c4-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951726977,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadc3e6-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951726985,82,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadc3e6-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951727067,80,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadc3e6-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951727148,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadc4fe-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951727156,82,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadc4fe-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951727238,87,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadc4fe-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951727326,11,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadc620-c3b7-11ed-afa1-0242ac120002,11,0,1
+1678951727338,82,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadc620-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951727420,86,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadc620-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951727506,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadc7c4-c3b7-11ed-afa1-0242ac120002,7,0,1
+1678951727514,81,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadc7c4-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951727595,82,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadc7c4-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951727678,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadc8e6-c3b7-11ed-afa1-0242ac120002,8,0,0
+1678951727687,135,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadc8e6-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951727822,83,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadc8e6-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951727905,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadc9fe-c3b7-11ed-afa1-0242ac120002,8,0,1
+1678951727914,82,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadc9fe-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951727996,90,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadc9fe-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951728087,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadcb16-c3b7-11ed-afa1-0242ac120002,8,0,0
+1678951728095,83,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadcb16-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951728178,78,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadcb16-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951728256,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadcc38-c3b7-11ed-afa1-0242ac120002,8,0,1
+1678951728264,81,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadcc38-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951728345,85,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadcc38-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951728431,10,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadcd46-c3b7-11ed-afa1-0242ac120002,10,0,1
+1678951728442,83,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadcd46-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951728525,84,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadcd46-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951728610,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadceb8-c3b7-11ed-afa1-0242ac120002,8,0,0
+1678951728619,82,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadceb8-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951728702,83,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadceb8-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951728786,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadd03e-c3b7-11ed-afa1-0242ac120002,8,0,1
+1678951728795,89,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadd03e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951728885,80,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadd03e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951728965,10,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadd174-c3b7-11ed-afa1-0242ac120002,10,0,1
+1678951728976,81,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadd174-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951729057,81,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadd174-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951729139,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadd28c-c3b7-11ed-afa1-0242ac120002,9,0,0
+1678951729149,86,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadd28c-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951729236,79,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadd28c-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951729316,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadd3e0-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951729324,84,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadd3e0-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951729409,82,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadd3e0-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951729492,10,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadd502-c3b7-11ed-afa1-0242ac120002,10,0,1
+1678951729503,86,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadd502-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951729590,80,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadd502-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951729671,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadd62e-c3b7-11ed-afa1-0242ac120002,9,0,0
+1678951729681,85,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadd62e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951729767,81,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadd62e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951729849,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadd796-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951729857,86,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadd796-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951729944,92,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadd796-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951730037,18,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadd8a4-c3b7-11ed-afa1-0242ac120002,18,0,0
+1678951730056,140,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadd8a4-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951730196,83,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadd8a4-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951730279,11,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadd9d0-c3b7-11ed-afa1-0242ac120002,11,0,1
+1678951730290,130,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadd9d0-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951730421,82,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadd9d0-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951730504,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6faddb42-c3b7-11ed-afa1-0242ac120002,9,0,0
+1678951730514,83,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6faddb42-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951730598,81,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6faddb42-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951730680,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6faddc5a-c3b7-11ed-afa1-0242ac120002,8,0,0
+1678951730688,84,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6faddc5a-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951730773,86,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6faddc5a-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951730860,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6faddd7c-c3b7-11ed-afa1-0242ac120002,7,0,1
+1678951730868,88,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6faddd7c-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951730956,86,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6faddd7c-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951731042,17,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadde94-c3b7-11ed-afa1-0242ac120002,17,0,1
+1678951731060,106,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadde94-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951731166,103,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadde94-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951731270,14,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6faddffc-c3b7-11ed-afa1-0242ac120002,14,0,1
+1678951731285,85,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6faddffc-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951731371,81,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6faddffc-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951731452,10,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fade114-c3b7-11ed-afa1-0242ac120002,10,0,1
+1678951731462,84,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fade114-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951731547,88,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fade114-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951731636,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fade222-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951731643,83,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fade222-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951731727,88,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fade222-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951731816,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fade38a-c3b7-11ed-afa1-0242ac120002,9,0,1
+1678951731826,91,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fade38a-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951731918,84,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fade38a-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951732002,11,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fade754-c3b7-11ed-afa1-0242ac120002,11,0,1
+1678951732013,94,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fade754-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951732108,82,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fade754-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951732190,11,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fade984-c3b7-11ed-afa1-0242ac120002,11,0,1
+1678951732201,99,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fade984-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951732300,83,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fade984-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951732384,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadebdc-c3b7-11ed-afa1-0242ac120002,8,0,0
+1678951732392,81,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadebdc-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951732474,104,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadebdc-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951732579,19,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadedda-c3b7-11ed-afa1-0242ac120002,19,0,1
+1678951732598,180,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadedda-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951732778,109,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadedda-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951732888,92,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadef88-c3b7-11ed-afa1-0242ac120002,92,0,0
+1678951732981,81,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadef88-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951733063,98,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadef88-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951733162,23,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadf10e-c3b7-11ed-afa1-0242ac120002,23,0,0
+1678951733186,192,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadf10e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951733379,107,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadf10e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951733487,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadf438-c3b7-11ed-afa1-0242ac120002,8,0,0
+1678951733495,81,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadf438-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951733576,86,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadf438-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951733662,10,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadf5b4-c3b7-11ed-afa1-0242ac120002,10,0,1
+1678951733673,81,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadf5b4-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951733754,82,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadf5b4-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951733837,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadf870-c3b7-11ed-afa1-0242ac120002,8,0,1
+1678951733846,80,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadf870-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951733927,85,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadf870-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951734013,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadfa3c-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951734021,81,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadfa3c-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951734103,83,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadfa3c-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951734187,10,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadfb86-c3b7-11ed-afa1-0242ac120002,10,0,0
+1678951734197,82,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadfb86-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951734279,88,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadfb86-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951734368,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadfc9e-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951734375,85,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadfc9e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951734460,96,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadfc9e-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951734557,13,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadfdac-c3b7-11ed-afa1-0242ac120002,13,0,0
+1678951734571,80,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadfdac-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951734652,80,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadfdac-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951734733,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fadff28-c3b7-11ed-afa1-0242ac120002,9,0,0
+1678951734743,85,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fadff28-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951734828,79,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fadff28-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951734908,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae0036-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951734915,85,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae0036-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951735001,83,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae0036-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951735085,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae013a-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951735092,82,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae013a-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951735174,86,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae013a-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951735260,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae02c0-c3b7-11ed-afa1-0242ac120002,8,0,1
+1678951735268,81,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae02c0-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951735350,81,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae02c0-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951735432,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae03ce-c3b7-11ed-afa1-0242ac120002,8,0,1
+1678951735440,85,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae03ce-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951735526,82,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae03ce-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951735608,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae04dc-c3b7-11ed-afa1-0242ac120002,8,0,1
+1678951735616,85,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae04dc-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951735701,83,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae04dc-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951735784,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae063a-c3b7-11ed-afa1-0242ac120002,9,0,1
+1678951735793,90,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae063a-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951735884,84,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae063a-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951735969,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae073e-c3b7-11ed-afa1-0242ac120002,8,0,0
+1678951735978,82,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae073e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951736060,82,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae073e-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951736142,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae084c-c3b7-11ed-afa1-0242ac120002,9,0,1
+1678951736151,86,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae084c-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951736238,80,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae084c-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951736319,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae09a0-c3b7-11ed-afa1-0242ac120002,8,0,0
+1678951736327,85,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae09a0-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951736412,82,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae09a0-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951736495,13,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae0aae-c3b7-11ed-afa1-0242ac120002,13,0,0
+1678951736509,87,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae0aae-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951736597,83,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae0aae-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951736680,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae0bd0-c3b7-11ed-afa1-0242ac120002,7,0,1
+1678951736688,80,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae0bd0-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951736768,82,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae0bd0-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951736851,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae0df6-c3b7-11ed-afa1-0242ac120002,9,0,1
+1678951736861,84,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae0df6-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951736946,86,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae0df6-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951737032,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae0fea-c3b7-11ed-afa1-0242ac120002,7,0,1
+1678951737040,80,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae0fea-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951737121,82,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae0fea-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951737204,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae1184-c3b7-11ed-afa1-0242ac120002,9,0,1
+1678951737214,81,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae1184-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951737295,80,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae1184-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951737376,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae12ec-c3b7-11ed-afa1-0242ac120002,8,0,0
+1678951737384,79,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae12ec-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951737464,89,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae12ec-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951737554,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae1472-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951737562,83,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae1472-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951737646,83,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae1472-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951737730,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae1580-c3b7-11ed-afa1-0242ac120002,9,0,0
+1678951737740,85,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae1580-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951737825,83,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae1580-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951737909,13,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae168e-c3b7-11ed-afa1-0242ac120002,13,0,0
+1678951737923,85,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae168e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951738008,84,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae168e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951738093,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae179c-c3b7-11ed-afa1-0242ac120002,9,0,0
+1678951738103,84,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae179c-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951738187,84,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae179c-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951738272,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae1936-c3b7-11ed-afa1-0242ac120002,9,0,0
+1678951738281,83,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae1936-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951738365,85,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae1936-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951738451,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae1a44-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951738458,86,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae1a44-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951738544,83,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae1a44-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951738627,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae1b52-c3b7-11ed-afa1-0242ac120002,8,0,1
+1678951738636,82,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae1b52-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951738718,86,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae1b52-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951738805,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae1c6a-c3b7-11ed-afa1-0242ac120002,9,0,0
+1678951738814,89,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae1c6a-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951738904,87,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae1c6a-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951738991,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae1d6e-c3b7-11ed-afa1-0242ac120002,9,0,1
+1678951739001,91,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae1d6e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951739093,81,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae1d6e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951739175,17,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae1ee0-c3b7-11ed-afa1-0242ac120002,17,0,0
+1678951739192,81,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae1ee0-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951739273,100,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae1ee0-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951739374,25,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae1ff8-c3b7-11ed-afa1-0242ac120002,25,0,0
+1678951739400,101,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae1ff8-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951739502,94,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae1ff8-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951739597,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae2106-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951739604,84,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae2106-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951739688,80,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae2106-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951739769,15,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae221e-c3b7-11ed-afa1-0242ac120002,15,0,1
+1678951739785,95,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae221e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951739881,85,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae221e-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951739967,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae2322-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951739974,89,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae2322-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951740064,87,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae2322-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951740151,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae24b2-c3b7-11ed-afa1-0242ac120002,9,0,1
+1678951740161,83,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae24b2-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951740244,81,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae24b2-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951740326,6,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae25ca-c3b7-11ed-afa1-0242ac120002,6,0,0
+1678951740333,82,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae25ca-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951740416,79,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae25ca-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951740496,6,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae26d8-c3b7-11ed-afa1-0242ac120002,6,0,0
+1678951740502,86,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae26d8-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951740588,89,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae26d8-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951740678,14,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae27e6-c3b7-11ed-afa1-0242ac120002,14,0,0
+1678951740693,82,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae27e6-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951740775,89,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae27e6-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951740865,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae28fe-c3b7-11ed-afa1-0242ac120002,8,0,0
+1678951740873,89,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae28fe-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951740962,81,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae28fe-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951741044,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae2a02-c3b7-11ed-afa1-0242ac120002,7,0,1
+1678951741052,86,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae2a02-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951741139,82,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae2a02-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951741222,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae2d86-c3b7-11ed-afa1-0242ac120002,8,0,0
+1678951741230,85,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae2d86-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951741315,86,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae2d86-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951741401,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae2eb2-c3b7-11ed-afa1-0242ac120002,8,0,1
+1678951741410,94,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae2eb2-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951741505,89,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae2eb2-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951741595,11,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae2fc0-c3b7-11ed-afa1-0242ac120002,11,0,4
+1678951741606,81,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae2fc0-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951741688,82,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae2fc0-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951741771,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae3132-c3b7-11ed-afa1-0242ac120002,9,0,0
+1678951741781,78,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae3132-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951741860,85,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae3132-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951741945,12,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae3240-c3b7-11ed-afa1-0242ac120002,12,0,1
+1678951741957,81,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae3240-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951742038,86,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae3240-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951742124,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae3358-c3b7-11ed-afa1-0242ac120002,9,0,1
+1678951742133,82,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae3358-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951742216,83,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae3358-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951742300,17,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae345c-c3b7-11ed-afa1-0242ac120002,17,0,11
+1678951742317,86,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae345c-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951742403,85,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae345c-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951742489,8,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae35ba-c3b7-11ed-afa1-0242ac120002,8,0,0
+1678951742497,90,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae35ba-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951742588,96,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae35ba-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951742685,11,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae36c8-c3b7-11ed-afa1-0242ac120002,11,0,1
+1678951742696,160,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae36c8-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951742856,86,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae36c8-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951742942,37,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae37d6-c3b7-11ed-afa1-0242ac120002,37,0,1
+1678951742980,103,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae37d6-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951743084,113,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae37d6-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951743198,84,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae392a-c3b7-11ed-afa1-0242ac120002,84,0,0
+1678951743283,84,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae392a-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951743368,85,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae392a-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951743454,10,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae3a42-c3b7-11ed-afa1-0242ac120002,10,0,0
+1678951743464,82,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae3a42-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951743547,86,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae3a42-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951743634,9,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae3b5a-c3b7-11ed-afa1-0242ac120002,9,0,0
+1678951743643,94,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae3b5a-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951743738,85,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae3b5a-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951743824,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae3cc2-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951743831,166,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae3cc2-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951743998,91,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae3cc2-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951744090,7,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae3dda-c3b7-11ed-afa1-0242ac120002,7,0,0
+1678951744098,93,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae3dda-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951744192,90,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae3dda-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951744283,12,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae3ede-c3b7-11ed-afa1-0242ac120002,12,0,0
+1678951744295,86,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae3ede-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951744381,81,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae3ede-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951744463,10,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae4046-c3b7-11ed-afa1-0242ac120002,10,0,0
+1678951744473,127,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae4046-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951744601,102,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae4046-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951744704,14,Device registry,201,Created,Device registration 1-1,text,true,,267,378,1,1,http://192.168.59.125:30500/v1/devices/org.home/org.home:6fae4226-c3b7-11ed-afa1-0242ac120002,14,0,0
+1678951744718,94,Set password,204,No Content,Device registration 1-1,text,true,,118,526,1,1,http://192.168.59.125:30500/v1/credentials/org.home/org.home:6fae4226-c3b7-11ed-afa1-0242ac120002,0,0,0
+1678951744813,103,Create the thing,204,No Content,Device registration 1-1,,true,,392,662,1,1,http://192.168.59.125:31129/api/2/things/org.home:6fae4226-c3b7-11ed-afa1-0242ac120002,0,0,1
+1678951744948,119,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-1,,true,,11,0,1,1,null,0,0,0
+1678951745068,102,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-2,,true,,11,0,2,2,null,0,0,0
+1678951745218,92,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-3,,true,,11,0,3,3,null,0,0,0
+1678951745368,84,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-4,,true,,11,0,4,4,null,0,0,0
+1678951745519,123,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-5,,true,,11,0,5,5,null,0,0,0
+1678951745669,86,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-6,,true,,11,0,6,6,null,0,0,0
+1678951745818,99,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-7,,true,,11,0,7,7,null,0,0,0
+1678951745968,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-8,,true,,11,0,8,8,null,0,0,0
+1678951746119,88,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-9,,true,,11,0,9,9,null,0,0,0
+1678951746268,89,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-10,,true,,11,0,10,10,null,0,0,0
+1678951746418,85,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-11,,true,,11,0,11,11,null,0,0,0
+1678951746568,97,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-12,,true,,11,0,12,12,null,0,0,0
+1678951746718,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-13,,true,,11,0,13,13,null,0,0,0
+1678951746868,104,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-14,,true,,11,0,14,14,null,0,0,0
+1678951747019,97,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-15,,true,,11,0,15,15,null,0,0,0
+1678951747168,97,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-16,,true,,11,0,16,16,null,0,0,0
+1678951747318,91,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-17,,true,,11,0,17,17,null,0,0,0
+1678951747468,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-18,,true,,11,0,18,18,null,0,0,0
+1678951747619,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-19,,true,,11,0,19,19,null,0,0,0
+1678951747768,89,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-20,,true,,11,0,20,20,null,0,0,0
+1678951747918,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-21,,true,,11,0,21,21,null,0,0,0
+1678951748071,88,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-22,,true,,11,0,22,22,null,0,0,0
+1678951748219,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-23,,true,,11,0,23,23,null,0,0,0
+1678951748370,84,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-24,,true,,11,0,24,24,null,0,0,0
+1678951748518,86,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-25,,true,,11,0,25,25,null,0,0,0
+1678951748668,88,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-26,,true,,11,0,26,26,null,0,0,0
+1678951748818,89,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-27,,true,,11,0,27,27,null,0,0,0
+1678951748968,85,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-28,,true,,11,0,28,28,null,0,0,0
+1678951749118,88,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-29,,true,,11,0,29,29,null,0,0,0
+1678951749267,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-30,,true,,11,0,30,30,null,0,0,0
+1678951749417,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-31,,true,,11,0,31,31,null,0,0,0
+1678951749569,85,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-32,,true,,11,0,32,32,null,0,0,0
+1678951749721,88,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-33,,true,,11,0,33,33,null,0,0,0
+1678951749871,86,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-34,,true,,11,0,34,34,null,0,0,0
+1678951750021,97,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-35,,true,,11,0,35,35,null,0,0,0
+1678951750169,89,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-36,,true,,11,0,36,36,null,0,0,0
+1678951750319,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-37,,true,,11,0,37,37,null,0,0,0
+1678951750468,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-38,,true,,11,0,38,38,null,0,0,0
+1678951750619,86,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-39,,true,,11,0,39,39,null,0,0,0
+1678951750769,114,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-40,,true,,11,0,40,40,null,0,0,0
+1678951750918,96,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-41,,true,,11,0,41,41,null,0,0,0
+1678951751068,106,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-42,,true,,11,0,42,42,null,0,0,0
+1678951751217,92,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-43,,true,,11,0,43,43,null,0,0,0
+1678951751369,85,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-44,,true,,11,0,44,44,null,0,0,0
+1678951751518,88,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-45,,true,,11,0,45,45,null,0,0,0
+1678951751668,85,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-46,,true,,11,0,46,46,null,0,0,0
+1678951751819,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-47,,true,,11,0,47,47,null,0,0,0
+1678951751969,86,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-48,,true,,11,0,48,48,null,0,0,0
+1678951752118,118,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-49,,true,,11,0,49,49,null,0,0,0
+1678951752268,92,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-50,,true,,11,0,50,50,null,0,0,0
+1678951752418,88,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-51,,true,,11,0,51,51,null,0,0,0
+1678951752571,107,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-52,,true,,11,0,52,52,null,0,0,0
+1678951752718,161,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-53,,true,,11,0,54,54,null,0,0,0
+1678951752872,88,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-54,,true,,11,0,54,54,null,0,0,0
+1678951753027,152,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-55,,true,,11,0,56,56,null,0,0,0
+1678951753168,100,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-56,,true,,11,0,56,56,null,0,0,0
+1678951753320,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-57,,true,,11,0,57,57,null,0,0,0
+1678951753473,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-58,,true,,11,0,58,58,null,0,0,0
+1678951753618,85,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-59,,true,,11,0,59,59,null,0,0,0
+1678951753769,85,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-60,,true,,11,0,60,60,null,0,0,0
+1678951753919,86,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-61,,true,,11,0,61,61,null,0,0,0
+1678951754069,90,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-62,,true,,11,0,62,62,null,0,0,0
+1678951754218,91,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-63,,true,,11,0,63,63,null,0,0,0
+1678951754368,86,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-64,,true,,11,0,64,64,null,0,0,0
+1678951754519,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-65,,true,,11,0,65,65,null,0,0,0
+1678951754667,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-66,,true,,11,0,66,66,null,0,0,0
+1678951754817,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-67,,true,,11,0,67,67,null,0,0,0
+1678951754967,89,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-68,,true,,11,0,68,68,null,0,0,0
+1678951755118,95,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-69,,true,,11,0,69,69,null,0,0,0
+1678951755268,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-70,,true,,11,0,70,70,null,0,0,0
+1678951755419,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-71,,true,,11,0,71,71,null,0,0,0
+1678951755572,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-72,,true,,11,0,72,72,null,0,0,0
+1678951755719,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-73,,true,,11,0,73,73,null,0,0,0
+1678951755869,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-74,,true,,11,0,74,74,null,0,0,0
+1678951756017,86,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-75,,true,,11,0,75,75,null,0,0,0
+1678951756167,85,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-76,,true,,11,0,76,76,null,0,0,0
+1678951756317,93,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-77,,true,,11,0,77,77,null,0,0,0
+1678951756467,88,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-78,,true,,11,0,78,78,null,0,0,0
+1678951756618,102,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-79,,true,,11,0,79,79,null,0,0,0
+1678951756767,89,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-80,,true,,11,0,80,80,null,0,0,0
+1678951756918,93,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-81,,true,,11,0,81,81,null,0,0,0
+1678951757069,117,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-82,,true,,11,0,82,82,null,0,0,0
+1678951757219,106,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-83,,true,,11,0,83,83,null,0,0,0
+1678951757370,88,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-84,,true,,11,0,84,84,null,0,0,0
+1678951757522,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-85,,true,,11,0,85,85,null,0,0,0
+1678951757676,85,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-86,,true,,11,0,86,86,null,0,0,0
+1678951757819,84,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-87,,true,,11,0,87,87,null,0,0,0
+1678951757969,86,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-88,,true,,11,0,88,88,null,0,0,0
+1678951758117,88,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-89,,true,,11,0,89,89,null,0,0,0
+1678951758268,97,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-90,,true,,11,0,90,90,null,0,0,0
+1678951758420,94,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-91,,true,,11,0,91,91,null,0,0,0
+1678951758569,86,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-92,,true,,11,0,92,92,null,0,0,0
+1678951758718,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-93,,true,,11,0,93,93,null,0,0,0
+1678951758868,87,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-94,,true,,11,0,94,94,null,0,0,0
+1678951759018,92,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-95,,true,,11,0,95,95,null,0,0,0
+1678951759168,100,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-96,,true,,11,0,96,96,null,0,0,0
+1678951759320,111,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-97,,true,,11,0,97,97,null,0,0,0
+1678951759468,134,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-98,,true,,11,0,98,98,null,0,0,0
+1678951759694,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-1,,true,,813,0,99,99,null,0,0,0
+1678951759731,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-1,,true,,20,266,99,99,null,0,0,0
+1678951759731,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-1,,true,,11,0,99,99,null,0,0,0
+1678951759619,134,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-99,,true,,11,0,98,98,null,0,0,0
+1678951759819,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-2,,true,,813,0,99,99,null,0,0,0
+1678951759819,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-2,,true,,20,266,99,99,null,1,0,0
+1678951759820,5,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-2,,true,,11,0,99,99,null,0,0,0
+1678951759946,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-3,,true,,813,0,98,98,null,0,0,0
+1678951759947,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-3,,true,,20,266,98,98,null,0,0,0
+1678951759947,31,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-3,,true,,11,0,98,98,null,0,0,0
+1678951759768,236,MQTT Connection for sub,200,Connection HiveMQTTConnection{clientId='conn_'} established successfully.,Activate Mqtt Pub_Sub 2-100,,true,,11,0,97,97,null,0,0,0
+1678951760091,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-4,,true,,813,0,97,97,null,0,0,0
+1678951760092,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-4,,true,,20,266,97,97,null,0,0,0
+1678951760092,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-4,,true,,11,0,97,97,null,0,0,0
+1678951760241,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-5,,true,,813,0,96,96,null,0,0,0
+1678951760241,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-5,,true,,20,266,96,96,null,0,0,0
+1678951760241,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-5,,true,,11,0,96,96,null,0,0,0
+1678951760372,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-6,,true,,813,0,95,95,null,0,0,0
+1678951760373,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-6,,true,,20,266,95,95,null,0,0,0
+1678951760373,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-6,,true,,11,0,95,95,null,0,0,0
+1678951760525,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-7,,true,,813,0,94,94,null,0,0,0
+1678951760526,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-7,,true,,20,266,94,94,null,0,0,0
+1678951760527,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-7,,true,,11,0,94,94,null,0,0,0
+1678951760666,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-8,,true,,813,0,93,93,null,0,0,0
+1678951760666,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-8,,true,,20,266,93,93,null,0,0,0
+1678951760667,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-8,,true,,11,0,93,93,null,0,0,0
+1678951760820,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-9,,true,,813,0,92,92,null,0,0,0
+1678951760820,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-9,,true,,20,266,92,92,null,1,0,0
+1678951760821,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-9,,true,,11,0,92,92,null,0,0,0
+1678951760965,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-10,,true,,813,0,91,91,null,0,0,0
+1678951760966,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-10,,true,,20,266,91,91,null,0,0,0
+1678951760966,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-10,,true,,11,0,91,91,null,0,0,0
+1678951761118,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-11,,true,,813,0,90,90,null,0,0,0
+1678951761118,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-11,,true,,20,266,90,90,null,1,0,0
+1678951761119,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-11,,true,,11,0,90,90,null,0,0,0
+1678951761282,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-12,,true,,813,0,89,89,null,0,0,0
+1678951761283,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-12,,true,,20,266,89,89,null,0,0,0
+1678951761283,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-12,,true,,11,0,89,89,null,0,0,0
+1678951761416,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-13,,true,,813,0,88,88,null,0,0,0
+1678951761416,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-13,,true,,20,266,88,88,null,1,0,0
+1678951761417,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-13,,true,,11,0,88,88,null,0,0,0
+1678951761579,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-14,,true,,813,0,87,87,null,0,0,0
+1678951761580,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-14,,true,,20,266,87,87,null,0,0,0
+1678951761580,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-14,,true,,11,0,87,87,null,0,0,0
+1678951761729,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-15,,true,,813,0,86,86,null,0,0,0
+1678951761729,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-15,,true,,20,266,86,86,null,1,0,0
+1678951761730,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-15,,true,,11,0,86,86,null,0,0,0
+1678951761866,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-16,,true,,813,0,85,85,null,0,0,0
+1678951761867,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-16,,true,,20,266,85,85,null,0,0,0
+1678951761867,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-16,,true,,11,0,85,85,null,0,0,0
+1678951762014,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-17,,true,,813,0,84,84,null,0,0,0
+1678951762015,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-17,,true,,20,266,84,84,null,0,0,0
+1678951762015,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-17,,true,,11,0,84,84,null,0,0,0
+1678951762165,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-18,,true,,813,0,83,83,null,0,0,0
+1678951762165,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-18,,true,,20,266,83,83,null,0,0,0
+1678951762165,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-18,,true,,11,0,83,83,null,0,0,0
+1678951762317,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-19,,true,,813,0,82,82,null,0,0,0
+1678951762317,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-19,,true,,20,266,82,82,null,1,0,0
+1678951762318,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-19,,true,,11,0,82,82,null,0,0,0
+1678951762463,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-20,,true,,813,0,81,81,null,0,0,0
+1678951762463,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-20,,true,,20,266,81,81,null,0,0,0
+1678951762463,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-20,,true,,11,0,81,81,null,0,0,0
+1678951762647,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-21,,true,,813,0,80,80,null,0,0,0
+1678951762647,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-21,,true,,20,266,80,80,null,0,0,0
+1678951762647,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-21,,true,,11,0,80,80,null,0,0,0
+1678951762764,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-22,,true,,813,0,79,79,null,0,0,0
+1678951762764,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-22,,true,,20,266,79,79,null,1,0,0
+1678951762765,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-22,,true,,11,0,79,79,null,0,0,0
+1678951762916,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-23,,true,,813,0,78,78,null,0,0,0
+1678951762916,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-23,,true,,20,266,78,78,null,0,0,0
+1678951762916,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-23,,true,,11,0,78,78,null,0,0,0
+1678951763064,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-24,,true,,813,0,77,77,null,0,0,0
+1678951763064,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-24,,true,,20,266,77,77,null,0,0,0
+1678951763065,0,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-24,,true,,11,0,77,77,null,0,0,0
+1678951763225,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-25,,true,,813,0,76,76,null,0,0,0
+1678951763226,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-25,,true,,20,266,76,76,null,0,0,0
+1678951763226,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-25,,true,,11,0,76,76,null,0,0,0
+1678951763367,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-26,,true,,813,0,75,75,null,0,0,0
+1678951763367,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-26,,true,,20,266,75,75,null,0,0,0
+1678951763368,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-26,,true,,11,0,75,75,null,0,0,0
+1678951763516,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-27,,true,,813,0,74,74,null,0,0,0
+1678951763516,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-27,,true,,20,266,74,74,null,0,0,0
+1678951763516,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-27,,true,,11,0,74,74,null,0,0,0
+1678951763674,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-28,,true,,813,0,73,73,null,0,0,0
+1678951763674,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-28,,true,,20,266,73,73,null,0,0,0
+1678951763674,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-28,,true,,11,0,73,73,null,0,0,0
+1678951763815,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-29,,true,,813,0,72,72,null,0,0,0
+1678951763815,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-29,,true,,20,266,72,72,null,0,0,0
+1678951763816,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-29,,true,,11,0,72,72,null,0,0,0
+1678951763969,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-30,,true,,813,0,71,71,null,0,0,0
+1678951763969,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-30,,true,,20,266,71,71,null,1,0,0
+1678951763970,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-30,,true,,11,0,71,71,null,0,0,0
+1678951764115,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-31,,true,,813,0,70,70,null,0,0,0
+1678951764116,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-31,,true,,20,266,70,70,null,0,0,0
+1678951764116,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-31,,true,,11,0,70,70,null,0,0,0
+1678951764266,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-32,,true,,813,0,69,69,null,0,0,0
+1678951764267,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-32,,true,,20,266,69,69,null,0,0,0
+1678951764267,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-32,,true,,11,0,69,69,null,0,0,0
+1678951764416,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-33,,true,,813,0,68,68,null,0,0,0
+1678951764417,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-33,,true,,20,266,68,68,null,0,0,0
+1678951764417,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-33,,true,,11,0,68,68,null,0,0,0
+1678951764570,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-34,,true,,813,0,67,67,null,0,0,0
+1678951764571,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-34,,true,,20,266,67,67,null,0,0,0
+1678951764571,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-34,,true,,11,0,67,67,null,0,0,0
+1678951764720,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-35,,true,,813,0,66,66,null,0,0,0
+1678951764720,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-35,,true,,20,266,66,66,null,0,0,0
+1678951764721,0,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-35,,true,,11,0,66,66,null,0,0,0
+1678951764877,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-36,,true,,813,0,65,65,null,0,0,0
+1678951764878,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-36,,true,,20,266,65,65,null,0,0,0
+1678951764878,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-36,,true,,11,0,65,65,null,0,0,0
+1678951765017,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-37,,true,,813,0,64,64,null,0,0,0
+1678951765017,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-37,,true,,20,266,64,64,null,0,0,0
+1678951765017,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-37,,true,,11,0,64,64,null,0,0,0
+1678951765166,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-38,,true,,813,0,63,63,null,0,0,0
+1678951765167,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-38,,true,,20,266,63,63,null,0,0,0
+1678951765167,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-38,,true,,11,0,63,63,null,0,0,0
+1678951765317,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-39,,true,,813,0,62,62,null,0,0,0
+1678951765317,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-39,,true,,20,266,62,62,null,0,0,0
+1678951765317,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-39,,true,,11,0,62,62,null,0,0,0
+1678951765469,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-40,,true,,813,0,61,61,null,0,0,0
+1678951765469,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-40,,true,,20,266,61,61,null,0,0,0
+1678951765470,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-40,,true,,11,0,61,61,null,0,0,0
+1678951765623,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-41,,true,,813,0,60,60,null,0,0,0
+1678951765623,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-41,,true,,20,266,60,60,null,0,0,0
+1678951765623,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-41,,true,,11,0,60,60,null,0,0,0
+1678951765763,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-42,,true,,813,0,59,59,null,0,0,0
+1678951765763,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-42,,true,,20,266,59,59,null,0,0,0
+1678951765763,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-42,,true,,11,0,59,59,null,0,0,0
+1678951765919,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-43,,true,,813,0,58,58,null,0,0,0
+1678951765919,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-43,,true,,20,266,58,58,null,0,0,0
+1678951765919,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-43,,true,,11,0,58,58,null,0,0,0
+1678951766063,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-44,,true,,813,0,57,57,null,0,0,0
+1678951766064,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-44,,true,,20,266,57,57,null,0,0,0
+1678951766064,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-44,,true,,11,0,57,57,null,0,0,0
+1678951766213,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-45,,true,,813,0,56,56,null,0,0,0
+1678951766214,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-45,,true,,20,266,56,56,null,0,0,0
+1678951766214,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-45,,true,,11,0,56,56,null,0,0,0
+1678951766360,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-46,,true,,813,0,55,55,null,0,0,0
+1678951766361,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-46,,true,,20,266,55,55,null,0,0,0
+1678951766361,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-46,,true,,11,0,55,55,null,0,0,0
+1678951766517,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-47,,true,,813,0,54,54,null,0,0,0
+1678951766518,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-47,,true,,20,266,54,54,null,0,0,0
+1678951766518,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-47,,true,,11,0,54,54,null,0,0,0
+1678951766665,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-48,,true,,813,0,53,53,null,0,0,0
+1678951766666,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-48,,true,,20,266,53,53,null,0,0,0
+1678951766666,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-48,,true,,11,0,53,53,null,0,0,0
+1678951766836,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-49,,true,,813,0,52,52,null,0,0,0
+1678951766837,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-49,,true,,20,266,52,52,null,0,0,0
+1678951766837,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-49,,true,,11,0,52,52,null,0,0,0
+1678951766962,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-50,,true,,813,0,51,51,null,0,0,0
+1678951766963,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-50,,true,,20,266,51,51,null,0,0,0
+1678951766963,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-50,,true,,11,0,51,51,null,0,0,0
+1678951767115,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-51,,true,,813,0,50,50,null,0,0,0
+1678951767115,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-51,,true,,20,266,50,50,null,0,0,0
+1678951767115,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-51,,true,,11,0,50,50,null,0,0,0
+1678951767276,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-52,,true,,813,0,49,49,null,0,0,0
+1678951767277,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-52,,true,,20,266,49,49,null,0,0,0
+1678951767277,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-52,,true,,11,0,49,49,null,0,0,0
+1678951767442,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-53,,true,,813,0,48,48,null,0,0,0
+1678951767443,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-53,,true,,20,266,48,48,null,0,0,0
+1678951767443,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-53,,true,,11,0,48,48,null,0,0,0
+1678951767578,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-54,,true,,813,0,47,47,null,0,0,0
+1678951767579,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-54,,true,,20,266,47,47,null,0,0,0
+1678951767579,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-54,,true,,11,0,47,47,null,0,0,0
+1678951767717,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-55,,true,,813,0,46,46,null,0,0,0
+1678951767717,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-55,,true,,20,266,46,46,null,0,0,0
+1678951767718,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-55,,true,,11,0,46,46,null,0,0,0
+1678951767861,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-56,,true,,813,0,45,45,null,0,0,0
+1678951767862,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-56,,true,,20,266,45,45,null,0,0,0
+1678951767862,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-56,,true,,11,0,45,45,null,0,0,0
+1678951768014,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-57,,true,,813,0,44,44,null,0,0,0
+1678951768015,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-57,,true,,20,266,44,44,null,0,0,0
+1678951768015,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-57,,true,,11,0,44,44,null,0,0,0
+1678951768165,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-58,,true,,813,0,43,43,null,0,0,0
+1678951768165,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-58,,true,,20,266,43,43,null,0,0,0
+1678951768166,0,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-58,,true,,11,0,43,43,null,0,0,0
+1678951768320,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-59,,true,,813,0,42,42,null,0,0,0
+1678951768320,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-59,,true,,20,266,42,42,null,0,0,0
+1678951768320,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-59,,true,,11,0,42,42,null,0,0,0
+1678951768464,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-60,,true,,813,0,41,41,null,0,0,0
+1678951768464,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-60,,true,,20,266,41,41,null,0,0,0
+1678951768465,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-60,,true,,11,0,41,41,null,0,0,0
+1678951768618,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-61,,true,,813,0,40,40,null,0,0,0
+1678951768619,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-61,,true,,20,266,40,40,null,0,0,0
+1678951768619,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-61,,true,,11,0,40,40,null,0,0,0
+1678951768774,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-62,,true,,813,0,39,39,null,0,0,0
+1678951768775,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-62,,true,,20,266,39,39,null,0,0,0
+1678951768775,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-62,,true,,11,0,39,39,null,0,0,0
+1678951768924,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-63,,true,,813,0,38,38,null,0,0,0
+1678951768925,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-63,,true,,20,266,38,38,null,0,0,0
+1678951768925,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-63,,true,,11,0,38,38,null,0,0,0
+1678951769067,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-64,,true,,813,0,37,37,null,0,0,0
+1678951769067,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-64,,true,,20,266,37,37,null,1,0,0
+1678951769068,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-64,,true,,11,0,37,37,null,0,0,0
+1678951769222,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-65,,true,,813,0,36,36,null,0,0,0
+1678951769223,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-65,,true,,20,266,36,36,null,0,0,0
+1678951769223,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-65,,true,,11,0,36,36,null,0,0,0
+1678951769371,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-66,,true,,813,0,35,35,null,0,0,0
+1678951769372,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-66,,true,,20,266,35,35,null,0,0,0
+1678951769372,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-66,,true,,11,0,35,35,null,0,0,0
+1678951769523,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-67,,true,,813,0,34,34,null,0,0,0
+1678951769523,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-67,,true,,20,266,34,34,null,1,0,0
+1678951769524,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-67,,true,,11,0,34,34,null,0,0,0
+1678951769701,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-68,,true,,813,0,33,33,null,0,0,0
+1678951769702,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-68,,true,,20,266,33,33,null,0,0,0
+1678951769703,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-68,,true,,11,0,33,33,null,0,0,0
+1678951769843,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-69,,true,,813,0,32,32,null,0,0,0
+1678951769843,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-69,,true,,20,266,32,32,null,1,0,0
+1678951769844,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-69,,true,,11,0,32,32,null,0,0,0
+1678951769975,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-70,,true,,813,0,31,31,null,0,0,0
+1678951769976,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-70,,true,,20,266,31,31,null,0,0,0
+1678951769976,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-70,,true,,11,0,31,31,null,0,0,0
+1678951770122,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-71,,true,,813,0,30,30,null,0,0,0
+1678951770123,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-71,,true,,20,266,30,30,null,0,0,0
+1678951770123,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-71,,true,,11,0,30,30,null,0,0,0
+1678951770266,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-72,,true,,813,0,29,29,null,0,0,0
+1678951770266,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-72,,true,,20,266,29,29,null,0,0,0
+1678951770266,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-72,,true,,11,0,29,29,null,0,0,0
+1678951770415,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-73,,true,,813,0,28,28,null,0,0,0
+1678951770415,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-73,,true,,20,266,28,28,null,1,0,0
+1678951770416,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-73,,true,,11,0,28,28,null,0,0,0
+1678951770569,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-74,,true,,813,0,27,27,null,0,0,0
+1678951770570,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-74,,true,,20,266,27,27,null,0,0,0
+1678951770570,4,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-74,,true,,11,0,27,27,null,0,0,0
+1678951770715,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-75,,true,,813,0,26,26,null,0,0,0
+1678951770716,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-75,,true,,20,266,26,26,null,0,0,0
+1678951770716,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-75,,true,,11,0,26,26,null,0,0,0
+1678951770871,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-76,,true,,813,0,25,25,null,0,0,0
+1678951770871,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-76,,true,,20,266,25,25,null,1,0,0
+1678951770872,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-76,,true,,11,0,25,25,null,0,0,0
+1678951771014,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-77,,true,,813,0,24,24,null,0,0,0
+1678951771015,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-77,,true,,20,266,24,24,null,0,0,0
+1678951771015,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-77,,true,,11,0,24,24,null,0,0,0
+1678951771166,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-78,,true,,813,0,23,23,null,0,0,0
+1678951771166,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-78,,true,,20,266,23,23,null,0,0,0
+1678951771167,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-78,,true,,11,0,23,23,null,0,0,0
+1678951771318,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-79,,true,,813,0,22,22,null,0,0,0
+1678951771319,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-79,,true,,20,266,22,22,null,0,0,0
+1678951771319,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-79,,true,,11,0,22,22,null,0,0,0
+1678951771471,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-80,,true,,813,0,21,21,null,0,0,0
+1678951771472,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-80,,true,,20,266,21,21,null,0,0,0
+1678951771472,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-80,,true,,11,0,21,21,null,0,0,0
+1678951771616,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-81,,true,,813,0,20,20,null,0,0,0
+1678951771616,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-81,,true,,20,266,20,20,null,1,0,0
+1678951771617,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-81,,true,,11,0,20,20,null,0,0,0
+1678951771770,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-82,,true,,813,0,19,19,null,0,0,0
+1678951771770,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-82,,true,,20,266,19,19,null,1,0,0
+1678951771771,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-82,,true,,11,0,19,19,null,0,0,0
+1678951771928,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-83,,true,,813,0,18,18,null,0,0,0
+1678951771928,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-83,,true,,20,266,18,18,null,1,0,0
+1678951771929,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-83,,true,,11,0,18,18,null,0,0,0
+1678951772070,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-84,,true,,813,0,17,17,null,0,0,0
+1678951772071,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-84,,true,,20,266,17,17,null,0,0,0
+1678951772071,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-84,,true,,11,0,17,17,null,0,0,0
+1678951772230,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-85,,true,,813,0,16,16,null,0,0,0
+1678951772231,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-85,,true,,20,266,16,16,null,0,0,0
+1678951772231,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-85,,true,,11,0,16,16,null,0,0,0
+1678951772366,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-86,,true,,813,0,15,15,null,0,0,0
+1678951772367,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-86,,true,,20,266,15,15,null,0,0,0
+1678951772367,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-86,,true,,11,0,15,15,null,0,0,0
+1678951772522,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-87,,true,,813,0,14,14,null,0,0,0
+1678951772522,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-87,,true,,20,266,14,14,null,0,0,0
+1678951772523,0,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-87,,true,,11,0,14,14,null,0,0,0
+1678951772669,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-88,,true,,813,0,13,13,null,0,0,0
+1678951772669,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-88,,true,,20,266,13,13,null,1,0,0
+1678951772670,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-88,,true,,11,0,13,13,null,0,0,0
+1678951772820,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-89,,true,,813,0,12,12,null,0,0,0
+1678951772821,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-89,,true,,20,266,12,12,null,0,0,0
+1678951772821,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-89,,true,,11,0,12,12,null,0,0,0
+1678951772966,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-90,,true,,813,0,11,11,null,0,0,0
+1678951772967,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-90,,true,,20,266,11,11,null,0,0,0
+1678951772967,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-90,,true,,11,0,11,11,null,0,0,0
+1678951773133,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-91,,true,,813,0,10,10,null,0,0,0
+1678951773133,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-91,,true,,20,266,10,10,null,0,0,0
+1678951773133,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-91,,true,,11,0,10,10,null,0,0,0
+1678951773289,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-92,,true,,813,0,9,9,null,0,0,0
+1678951773289,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-92,,true,,20,266,9,9,null,1,0,0
+1678951773290,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-92,,true,,11,0,9,9,null,0,0,0
+1678951773436,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-93,,true,,813,0,8,8,null,0,0,0
+1678951773437,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-93,,true,,20,266,8,8,null,0,0,0
+1678951773437,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-93,,true,,11,0,8,8,null,0,0,0
+1678951773587,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-94,,true,,813,0,7,7,null,0,0,0
+1678951773587,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-94,,true,,20,266,7,7,null,0,0,0
+1678951773588,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-94,,true,,11,0,7,7,null,0,0,0
+1678951773738,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-95,,true,,813,0,6,6,null,0,0,0
+1678951773739,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-95,,true,,20,266,6,6,null,0,0,0
+1678951773739,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-95,,true,,11,0,6,6,null,0,0,0
+1678951773879,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-96,,true,,813,0,5,5,null,0,0,0
+1678951773880,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-96,,true,,20,266,5,5,null,0,0,0
+1678951773880,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-96,,true,,11,0,5,5,null,0,0,0
+1678951774027,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-97,,true,,813,0,4,4,null,0,0,0
+1678951774028,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-97,,true,,20,266,4,4,null,0,0,0
+1678951774028,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-97,,true,,11,0,4,4,null,0,0,0
+1678951774170,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-98,,true,,813,0,3,3,null,0,0,0
+1678951774170,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-98,,true,,20,266,3,3,null,0,0,0
+1678951774171,1,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-98,,true,,11,0,3,3,null,0,0,0
+1678951774323,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-99,,true,,813,0,2,2,null,0,0,0
+1678951774323,0,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-99,,true,,20,266,2,2,null,0,0,0
+1678951774323,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-99,,true,,11,0,2,2,null,0,0,0
+1678951774477,0,MQTT Sub Sampler for receving a command,200,Received 1 of message.,Activate Mqtt Pub_Sub 2-100,,true,,813,0,1,1,null,0,0,0
+1678951774477,1,MQTT Pub Sampler for sending a response to a command,200,publish successfully for Connection HiveMQTTConnection{clientId='conn_'}.,Activate Mqtt Pub_Sub 2-100,,true,,20,266,1,1,null,1,0,0
+1678951774478,2,MQTT DisConnect,200,Connection HiveMQTTConnection{clientId='conn_'} disconnected.,Activate Mqtt Pub_Sub 2-100,,true,,11,0,1,1,null,0,0,0
+1678951774483,11,Delete device,204,No Content,Delete device 3-1,text,true,,74,227,1,1,http://192.168.59.125:30500/v1/devices/org.home,0,0,1

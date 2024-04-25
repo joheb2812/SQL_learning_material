@@ -1,0 +1,44 @@
+minikube delete #deleting the cluster 
+minikube start --cpus 4 --memory 9192 --disk-size 40000
+minikube tunnel 
+minikube stop 
+minikube status
+minikube dashboard 
+minikube service list 
+
+
+#Creating a namespace  
+kubectl create namespace cloud2edge
+kubectl describe pod c2e-ditto-gateway-6944f76d6b-2vcrl -n cloud2edge
+kubectl logs -f pod_name -n cloud2edge
+kubectl --tail 100 logs pod_name -n  cloud2edge
+kubectl delete pod c2e-ditto-gateway-6944f76d6b-2vcrl
+
+
+#edit the pods config
+kubectl get deployments -n cloud2edge
+kubectl edit deployment c2e-ditto-gateway -n cloud2edge
+kubectl rollout restart deployment c2e-ditto-nginx -n cloud2edge
+kubectl edit pod podName -n cloud2edge
+
+
+#install packages 
+helm install -n cloud2edge --wait --timeout 40m c2e eclipse-iot/cloud2edge
+helm repo list 
+helm repo remove eclipse-iot1
+helm search repo
+helm repo update 
+helm repo update eclipse-iot/ditto
+
+#Extract devops password 
+kubectl get namespaces
+kubectl get secrets -n cloud2edge
+kubectl -n cloud2edge get secrets c2e-ditto-gateway-secret
+kubectl -n cloud2edge get secret c2e-ditto-gateway-secret -o json
+#Decode the password 
+echo "encodedpassword" | base64 -d
+
+aURaRmxSa1BGdmNm
+
+echo "aURaRmxSa1BGdmNm" | base64 -d
+

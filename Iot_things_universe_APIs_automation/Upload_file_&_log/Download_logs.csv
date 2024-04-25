@@ -1,0 +1,15 @@
+TestcaseNo,TestDescription,TenantId,Path_18,FileName_18,ExpectedCode_18,ExpectedResponse_18
+TC_AM_114,Verify download log response with all valid input,Impressico28june,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,sample.log,200,
+TC_AM_115,Verify that requested file exist by inspecting the response body and headers ,Impressico28june,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,sample.log,200,
+TC_AM_116,Verify download log response with invalid file name ,Impressico28june,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,tnc.txt,400,"{
+  ""status"": ""Failure"",
+  ""message"": ""invalid log file""
+}"
+TC_AM_117,Verify download log response with unregistered X-TANENTID in request header,Testing_25,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,sample.log,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}"
+TC_AM_118,Verify download log response with empty XTANENTID in request header,,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,sample.log,404,"{
+""status"": ""Failure"",
+""message"": ""Tenant validation Failed !! tenantId = does not exists""
+}"

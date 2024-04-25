@@ -1,0 +1,38 @@
+TestCaseNo,TenantID,TestDescription,TestCaseType,accept_9,Content_9,ExpectedCode_9,ExpectedResponse_9,
+TC_AM_183,Impressico28june,Verify that API response is Successful if all headers and payload is accurate and as per req.,Positive,application/json,application/json,200,"{
+  ""status"": ""Success"",
+  ""message"": ""Faq deleted Successfully.""
+}",
+TC_AM_184,Impressico28june,"Verify that api is not executed successfully , when inavild accept type is present",Positive,application/js,application/json,406,,"{
+""type"": ""about:blank"",
+""title"": ""Not Acceptable"",
+""status"": 406,
+""detail"": ""(.*?)"",
+""instance"": ""/am/api/v1/faqs/(.+)""
+}"
+TC_AM_185,Testing_25,"Verify that api response is according to req. after passing unregistered
+tenant name as header",Positive,application/json,application/json,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}",
+TC_AM_186,,"Verify that api response is according to req. 
+with missing tenant header",Positive,application/json,application/json,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}",
+TC_AM_187,Impressico28june,Verify that API reponse is negative for invalid category param,Positive,application/json,application/json,400,"{
+""status"": ""Failure"",
+""message"": ""please provide a valid category""
+}",
+TC_AM_188,Impressico28june,Verify that API reponse is negative for Missing category param,Positive,application/json,application/json,400,"{
+""status"": ""Failure"",
+""message"": ""Please provide a valid category""
+}",
+TC_AM_189,Impressico28june,Verify that API reponse is negative for faq param that is not in db,Positive,application/json,application/json,404,"{
+""status"": ""Failure"",
+""message"": ""Error occurred while finding faq with ID (.+)""
+}",
+TC_AM_190,Impressico28june,Verify that API reponse is negative for Missing faq path variable,Positive,application/json,application/json,400,"{
+""status"": ""Failure"",
+""message"": ""Please provide a valid faq id""
+}",

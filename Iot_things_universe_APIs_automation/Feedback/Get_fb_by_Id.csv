@@ -1,0 +1,29 @@
+TestCaseNo,TenantID,TestDescription,TestCaseType,accept_2,ExpectedCode_2,ExpectedResponse_2,,
+TC_AM_22,Impressico28june,"Verify get feedback by ID with all valid input 
+",Positive,application/json,200,"{
+""status"": ""Success"",
+""message"": ""Feedback details fetched successfully."",
+""data"": {
+""id"": ""(.+)"",
+""subject"": ""(.+?)"",
+""content"": ""(.+?)"",
+""userId"": ""(.+?)"",
+""tenantId"": ""(.+?)"",
+""rating"": ""(.+)""
+}
+}",,
+TC_AM_25,,Verify get feedback by ID when X-TANANTID value is missing in request header ,Negative,application/json,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}",,
+TC_AM_26,Testing_25,Verify get feedback by ID when X-TANANTID field is not present in request header ,Negative,application/json,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}",,
+TC_AM_27,Impressico28june,Verify get feedback by ID when accept field is invalid in request header ,Negative,application/js,406,,,"{
+""type"": ""about:blank"",
+""title"": ""Not Acceptable"",
+""status"": 406,
+""detail"": ""(.*?)"",
+""instance"": ""/am/api/v1/feedbacks/(.+)""
+}"

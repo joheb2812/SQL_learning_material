@@ -1,0 +1,35 @@
+TestcaseNo,TestDescription,TenantId,Accept_15,Path ,fileName,ResponseCode,ExpectedMessage
+TC_AM_44,Verify upload file response with all valid input,Impressico28june,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,T&C.html,200,"{
+""status"": ""Success"",
+""message"": ""File uploaded"",
+""data"": ""File uploaded""
+}"
+TC_AM_45,Verify upload file response by sending other than .html file in payload ,Impressico28june,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,tnc.png,400,"{
+""status"": ""Failure"",
+""message"": ""Only html file extension is allowed""
+}"
+TC_AM_45,Verify upload file response by sending other than .html file in payload ,Impressico28june,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,tnc.txt,400,"{
+""status"": ""Failure"",
+""message"": ""Only html file extension is allowed""
+}"
+TC_AM_45,Verify upload file response by sending other than .html file in payload ,Impressico28june,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,sample.log,400,"{
+""status"": ""Failure"",
+""message"": ""Only html file extension is allowed""
+}"
+TC_AM_45,Verify upload file response by sending other than .html file in payload ,Impressico28june,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,Data.xlsx,400,"{
+""status"": ""Failure"",
+""message"": ""Only html file extension is allowed""
+}"
+TC_AM_45,Verify upload file response by sending other than .html file in payload ,Impressico28june,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,app.log,400,"{
+""status"": ""Failure"",
+""message"": ""Only html file extension is allowed""
+}"
+TC_AM_46,Verify upload file response by sending blank file in request payload ,Impressico28june,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,,400,
+TC_AM_47,Verify upload file response by sending unregister X-TANANTID in request header,Testing_25,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,T&C.html,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}"
+TC_AM_48,Verify upload file response when passing null  X-TANANTID  value in request header,,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,T&C.html,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}"

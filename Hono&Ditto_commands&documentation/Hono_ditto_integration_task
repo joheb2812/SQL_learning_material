@@ -1,0 +1,332 @@
+ II.Control Message :
+    1.Create command subscriber
+        mosquitto_sub -d -h 10.96.110.3 -p 1883 -u 'demo-device@org.eclipse.packages.c2e' -P demo-secret -k 60 -t command///req/#
+
+    2.Send a message via Things API
+        curl -i -X POST -u ditto:ditto -H 'Content-Type: text/plain' --data-raw '{"value":100}' http://192.168.49.2:32222/api/2/things/org.eclipse.packages.c2e:demo-device/inbox/messages/temperature?timeout=60
+
+
+  3.will receive the command message in #1 command window
+
+  4.Send the response from device back to the cloud services
+    mosquitto_pub -d -h 10.97.236.136 -p 1883 -u 'demo-device@org.eclipse.packages.c2e' -P demo-secret -k 30 \
+-t 'command///res/2244c5624d8-865a-4d85-bcb5-38e974efa695/200' \
+-m "{\"topic\":\"org.eclipse.packages.c2e/demo-device/things/live/messages/temperature\",
+\"headers\": {\"correlation-id\": \"4c5624d8-865a-4d85-bcb5-38e974efa695\",
+\"content-type\":\"text/plain\"},
+\"path\":\"/inbox/messages/temperature\",
+\"value\":\"value: 150\",
+\"status\": 200 }"
+
+===================================================================================================
+onboard device
+
+- create tenant - 
+- onboard device (hono)
+    - device registration(hono)
+    - add password(hono)
+    - create twin (ditto)
+    - policis (ditto)
+- connection b/w hono and ditto
+    - connection API  - (ditto)
+    - check connection status(ditto)
+
+- command(ditto - device) and command response (device - ditto)
+    - device - subscribe for topic - it will act as device 
+    - send comamnd message(ditto-device) - ditto - api - will send comamnd message
+    - command response (device-ditto) - publish to ditto - ditto will catch that reponse and we can update that value using twin (update feature API)
+=====================================================================================================
+
+mosquitto_sub -d -h 192.168.59.126 p 30883 -u 'AC@org.home' -P Welcome@123 -k 60 -t command///req/#
+
+api/2/things/org.home:${AuthID}/inbox/messages/temperature?timeout=15
+
+===============================================================================================
+helm upgrade c2e eclipse-iot/cloud2edge -n cloud2edge --set hono.useLoadBalancer=false --set hono.kafka.externalAccess.service.type=NodePort --wait --timeout 150m --debug
+
+
+helm install c2e eclipse-iot/cloud2edge -n cloud2edge --set hono.useLoadBalancer=false --set hono.kafka.externalAccess.service.type=NodePort --wait --timeout 150m --debug
+
+
+/things/{thingId}/features/coffee-brewer/properties/brewed-coffees
+
+==========================================================================
+{
+    "attributes": {
+        "location": "Germany"
+    },
+    "features": {
+        "temperature": {
+            "properties": {
+                "value": null
+            }
+        },
+        "humidity": {
+            "properties": {
+                "value": null
+            }
+        }
+    }
+}
+====================================================================================
+mosquitto_pub -d -h 10.110.228.37 -p 1883 -u 'lamp@org.home' -P welcome@123 -k 30 \
+-t 'command///res/2244c5624d8-865a-4d85-bcb5-38e974efa695/200' \
+-m "{\"topic\":\"org.home/lamp/things/live/messages/temperature\",
+\"headers\": {\"correlation-id\": \"4c5624d8-865a-4d85-bcb5-38e974efa695\",
+\"content-type\":\"text/plain\"},
+\"path\":\"/inbox/messages/temperature\",
+\"value\":\"value: 150\",
+\"status\": 200 }"
+
+=======================================================================================
+
+mosquitto_pub -d -h 10.110.228.37 -p 1883 -u 'ac@org.home' -P welcome@123 -k 30 \
+-t 'command///res/224c06492ab-d64a-4a29-a217-c9f69be0c837/200' \
+-m "{\"topic\":\"org.home/ac/things/live/messages/temperature\",
+\"headers\": {\"correlation-id\": \"c06492ab-d64a-4a29-a217-c9f69be0c837\",
+\"content-type\":\"text/plain\"},
+\"path\":\"/inbox/messages/temperature\",
+\"value\":\"value: 150\",
+\"status\": 200 }"
+
+==========================================================================================
+
+ curl -i -X POST -u ditto:ditto -H 'Content-Type: text/plain' --data-raw '{"value":150}' http://192.168.59.125:31129/api/2/things/org.home:lamp/inbox/messages/features?timeout=60
+
+===========================================================================================
+
+mosquitto_sub -d -h 10.110.228.37 -p 1883 -u 'ac@org.home' -P welcome@123 -k 60 -t command///req/#
+
+===========================================================================================
+
+Mqtt protocol(Device to app)
+Publish telemetry data(Authenticated Device)
+mosquitto_pub -h 10.96.156.179 -u lamp@IBS1 -P welcome@123 -t telemetry -m '{"temp": 90}'
+mosquitto_pub -u 'lamp@IBS1' -P welcome@123 -t t -m '{"temp": 23}'
+
+mosquitto_pub -h 10.96.156.179 -u bp@impressico -P welcome@123 -t telemetry -m '{"temp": 23}'
+================================================
+Publish Event data 
+mosquitto_pub -h 10.96.156.179 -u bp@impressico -P welcome@123 -t event -q 1 -m '{"alarm": "fire"}'
+mosquitto_pub -h 10.96.156.179 -u lamp@IBS1 -P welcome@123 -t event -q 1 -m '{"temperature": "High"}'
+=================================================
+Publish telemetry data(Un-authenticated Device)
+
+mosquitto_pub -t t/IBS1/sensor -m '{"temp": 87}'
+==================================================
+Publish telemetry data(un-authenticated Gateway)
+
+mosquitto_pub -u 'gw@IBS1' -P gw-secret -t t/IBS1/lamp -m '{"temp": 35}'
+
+====================================================
+Publish telemetry data(Authenticated Gateway)
+
+mosquitto_pub -u 'gw@IBS1' -P gw-secret -t t/IBS1/lamp -m '{"temp": 34}'
+
+=====================================================
+Publishing event 
+mosquitto_pub -u 'lamp@IBS1' -P welcome@123 -t e -q 1 -m '{"alarm": 1}'
+===================================================================
+
+mosquitto_pub -u lamp@IBS1 -P welcome@123 -t telemetry -m '{"temp": 5}'
+
+curl -i -X PUT -H 'content-type: application/json' --data-binary '{"temp": 23}' http://10.105.1.199:8080/telemetry/IBS1/sensor
+
+curl -i -X PUT -H 'content-type: application/json' --data-binary '{"temp": 5}' http://10.105.1.199:8080/telemetry/IBS1/sensor
+
+mosquitto_pub -h 10.96.156.179 -u lamp@IBS1 -P welcome@123 -t telemetry -m '{"temp": 5}'
+=========================================================================================
+
+(App to device)
+source hono.env
+mosquitto_sub -v -h 10.96.156.179 -p 1883-u Sensor1@IBS1 -P welcome@123 -t command///req/#
+
+mosquitto_sub -v -h 10.96.156.179 -u Sensor1@IBS1 -P welcome@123 -t command///req/#
+
+In new terminal 
+
+source hono.env
+java -jar hono-cli-2.0.2-exec.jar app ${APP_OPTIONS} command
+req --tenant IBS1 --device Sensor1 -n setBrightness --payload '{"level": 87}'
+ow --tenant IBS1 --device Sensor1 -n setVolume --payload '{"level": 50}'
+
+
+curl -i -u Sensor1@IBS1:welcome@123 -H 'content-type: application/json' -H 'hono-ttd: 60' --data-binary '{"temp": 5}' http://10.105.1.199:8080/telemetry
+
+
+
+curl -i -u Sensor1@IBS1:welcome@123 -H 'content-type: application/json' --data-binary '{"brightness-changed": true}' http://10.105.1.199:8080/command/res/req-id-uuid?hono-cmd-status=200
+
+
+=================================================================
+
+HTTP adapter (Authenticated Device)
+
+curl -i -u lamp@IBS1:welcome@123 -H 'content-type: application/json' --data-binary '{"temp": 15}' http://10.105.1.199:8080/telemetry
+================================================
+
+curl -i -u lamp@IBS1:welcome@123 -H 'content-type: application/json' -H 'qos-level: 1' --data-binary '{"temp": 25}' http://10.105.1.199:8080/telemetry
+=================================================
+
+curl -i -u lamp@IBS1:welcome@123 -H 'content-type: application/json' -H 'hono-ttd: 10' --data-binary '{"temp":22}' http://10.105.1.199:8080/telemetry
+==================================================
+
+HTTP adapter (Un-authenticated Device)
+
+curl -i -X PUT -H 'content-type: application/json' --data-binary '{"temp": 23}' http://10.105.1.199:8080/telemetry/IBS1/lamp
+
+======================================================
+curl -i -X PUT -H 'content-type: application/json' -H 'qos-level: 1' --data-binary '{"temp": 5}' http://10.105.1.199:8080/telemetry/IBS1/lamp
+
+=================================================
+
+curl -i -X PUT -H 'content-type: application/json' -H 'hono-ttd: 10' --data-binary '{"temp": 5}' http://10.105.1.199:8080/telemetry/IBS1/lamp
+===================================================
+
+HTTP adapter (Authenticated Gateway)
+
+curl -i -X PUT -u gw@IBS1:gw-welcome@123 -H 'content-type: application/json' --data-binary '{"temp": 5}' http://10.105.1.199:8080/telemetry/IBS1/lamp2
+====================================================
+
+curl -i -X PUT -u gw@IBS1:gw-welcome@123 -H 'content-type: application/json' -H 'qos-level: 1' --data-binary '{"temp": 5}' http://10.105.1.199:8080/telemetry//lamp
+
+=============================================================
+curl -i -X PUT -u gw@IBS1:gw-welcome@123 -H 'content-type: application/json' -H 'hono-ttd: 10' --data-binary '{"temp": 5}' http://10.105.1.199:8080/telemetry//lamp
+
+================================================================thenticated 
+Publish and Event (Authenticated Device)
+
+curl -i -u lamp@IBS1:welcome@123 -H 'content-type: application/json' --data-binary '{"alarm": true}' http://10.105.1.199:8080/event
+========================================================
+Publish and Event (Un-authenticated Device)
+
+curl -i -X PUT -H 'content-type: application/json' --data-binary '{"alarm": true}' http://10.105.1.199:8080/event/IBS1/lamp
+
+=========================================================
+Publish and Event (authenticated Gateway)
+
+curl -i -X PUT -u gw@IBS1:gw-welcome@123 -H 'content-type: application/json' --data-binary '{"temp": 5}' http://10.105.1.199:8080/event//lamp
+
+=========================================================
+Time a device will wait for response 
+Header
+
+curl -i -u lamp@IBS1:welcome@123 -H 'content-type: application/json' -H 'hono-ttd: 30' --data-binary '{"temp": 45}' http://10.105.1.199:8080/telemetry
+
+======================================================
+Query Parameter
+
+curl -i -u lamp@IBS1:welcome@123 -H 'content-type: application/json' --data-binary '{"temp": 5}' http://10.105.1.199:8080/telemetry?hono-ttd=30
+
+=========================================================
+
+curl -i -u lamp@IBS1:welcome@123 -H 'content-type: application/json' --data-binary '{"temp": 15}' http://10.105.1.199:8080/telemetry?hono-ttd=60
+
+curl -i -u lamp@IBS1:welcome@123 -H 'content-type: application/json' --data-binary '{"brightness-changed": true}' http://10.105.1.199:8080/command/res/req-id-uuid?hono-cmd-status=200
+
+curl -i -u lamp@IBS1:welcome@123 -H 'content-type: application/json' --data-binary '{"brightness-changed": true}' http://10.105.1.199:8080/command/res/007fdaea91a240bd0ff74ccae4ef0e9d29-030244f6697e9974-01?hono-cmd-status=200
+
+curl -i -u lamp@IBS1:welcome@123 -H 'content-type: application/json' --data-binary '{"temp": 5}' http://10.105.1.199:8080/telemetry?hono-ttd=2000
+
+===============================================================================
+Mqtt protocol(Device to app)
+Publish telemetry data(Authenticated Device)
+mosquitto_pub -h 10.96.156.179 -u lamp@IBS1 -P welcome@123 -t telemetry -m '{"temp": 90}'
+mosquitto_pub -u 'lamp@IBS1' -P welcome@123 -t t -m '{"temp": 23}'
+
+mosquitto_pub -h 10.96.156.179 -u bp@impressico -P welcome@123 -t telemetry -m '{"temp": 23}'
+================================================
+Publish Event data 
+mosquitto_pub -h 10.96.156.179 -u bp@impressico -P welcome@123 -t event -q 1 -m '{"alarm": "fire"}'
+mosquitto_pub -h 10.96.156.179 -u lamp@IBS1 -P welcome@123 -t event -q 1 -m '{"temperature": "High"}'
+=================================================
+Publish telemetry data(Un-authenticated Device)
+
+mosquitto_pub -t t/IBS1/sensor -m '{"temp": 87}'
+==================================================
+Publish telemetry data(un-authenticated Gateway)
+
+mosquitto_pub -u 'gw@IBS1' -P gw-secret -t t/IBS1/lamp -m '{"temp": 35}'
+
+====================================================
+Publish telemetry data(Authenticated Gateway)
+
+mosquitto_pub -u 'gw@IBS1' -P gw-secret -t t/IBS1/lamp -m '{"temp": 34}'
+
+=====================================================
+Publishing event 
+mosquitto_pub -u 'lamp@IBS1' -P welcome@123 -t e -q 1 -m '{"alarm": 1}'
+===================================================================
+
+mosquitto_pub -u lamp@IBS1 -P welcome@123 -t telemetry -m '{"temp": 5}'
+
+curl -i -X PUT -H 'content-type: application/json' --data-binary '{"temp": 23}' http://10.105.1.199:8080/telemetry/IBS1/sensor
+
+curl -i -X PUT -H 'content-type: application/json' --data-binary '{"temp": 5}' http://10.105.1.199:8080/telemetry/IBS1/sensor
+
+mosquitto_pub -h 10.96.156.179 -u lamp@IBS1 -P welcome@123 -t telemetry -m '{"temp": 5}'
+=========================================================================================
+
+(App to device)
+source hono.env
+mosquitto_sub -v -h 10.96.156.179 -p 1883-u Sensor1@IBS1 -P welcome@123 -t command///req/#
+
+mosquitto_sub -v -h 10.96.156.179 -u Sensor1@IBS1 -P welcome@123 -t command///req/#
+
+In new terminal 
+
+source hono.env
+java -jar hono-cli-2.0.2-exec.jar app ${APP_OPTIONS} command
+req --tenant IBS1 --device Sensor1 -n setBrightness --payload '{"level": 87}'
+ow --tenant IBS1 --device Sensor1 -n setVolume --payload '{"level": 50}'
+
+
+curl -i -u Sensor1@IBS1:welcome@123 -H 'content-type: application/json' -H 'hono-ttd: 60' --data-binary '{"temp": 5}' http://10.105.1.199:8080/telemetry
+
+
+
+curl -i -u Sensor1@IBS1:welcome@123 -H 'content-type: application/json' --data-binary '{"brightness-changed": true}' http://10.105.1.199:8080/command/res/req-id-uuid?hono-cmd-status=200
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

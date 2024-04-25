@@ -1,0 +1,130 @@
+TestCaseNo,TenantID,TestDescription,TestCaseType,accept_12,Content_12,Payload,ExpectedCode_12,ExpectedRes_12,
+TC_AM_75,Impressico28june,Verify update ticket by ID with all valid input ,Positive,application/json,application/json,"{
+  ""subject"": ""iot-app"",
+  ""description"": ""app-management services"",
+  ""status"": ""IN_PROGRESS""
+}",200,"{
+""status"": ""Success"",
+""message"": ""Ticket updated Successfully.""
+}",
+TC_AM_76,Impressico28june,"Verify update ticket by ID when ""subject"" field is missing from request payload ",Negative,application/json,application/json,"{
+  ""description"": ""app-management services"",
+  ""status"": ""IN_PROGRESS""
+}",400,"{
+""status"": ""Failure"",
+""message"": ""subject field is missing""
+}",
+TC_AM_77,Impressico28june,"Verify update ticket by ID when ""description"" field is missing from request payload ",Negative,application/json,application/json,"{
+  ""subject"": ""iot-app"",
+  ""status"": ""IN_PROGRESS""
+}",400,"{
+""status"": ""Failure"",
+""message"": ""description field is missing""
+}",
+TC_AM_78,Impressico28june,"Verify update ticket by ID when ""Status"" field is missing from request payload ",Negative,application/json,application/json,"{
+  ""subject"": ""iot-app"",
+  ""description"": ""app-management services""
+}",200,"{
+""status"": ""Success"",
+""message"": ""Ticket updated Successfully.""
+}",
+TC_AM_79,Impressico28june,"Verify update ticket by ID when ""subject"" field is null in request payload ",Negative,application/json,application/json,"{
+  ""subject"": """",
+  ""description"": ""app-management services"",
+  ""status"": ""IN_PROGRESS""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""please enter a valid subject""
+}",
+TC_AM_80,Impressico28june,"Verify update ticket by ID when ""description"" field is null in request payload ",Negative,application/json,application/json,"{
+  ""subject"": ""iot-app"",
+  ""description"": """",
+  ""status"": ""IN_PROGRESS""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""please enter a valid description""
+}",
+TC_AM_81,Impressico28june,"Verify update ticket by ID when ""status"" field is null in request payload ",Negative,application/json,application/json,"{
+  ""subject"": ""iot-app"",
+  ""description"": ""app-management services"",
+  ""status"": """"
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""status value is invalid""
+}",
+TC_AM_82,Impressico28june,Verify update ticket by ID when request payload is empty,Negative,application/json,application/json,,400,"{
+""status"": ""Failure"",
+""message"": ""Required request body is missing""
+}",
+TC_AM_83,Impressico28june,Verify update ticket by ID when subject field is integer in request body ,Negative,application/json,application/json,"{
+  ""subject"": 12345,
+  ""description"": ""app-management services"",
+  ""status"": ""IN_PROGRESS""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""please enter a valid subject""
+}",
+TC_AM_84,Impressico28june,"Verify update ticket by ID when ""description"" field is integer in request body",Negative,application/json,application/json,"{
+  ""subject"": ""iot-app"",
+  ""description"": 12345,
+  ""status"": ""IN_PROGRESS""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""please enter a valid description""
+}",
+TC_AM_85,Impressico28june,"Verify update ticket by ID status field will not accept other than ON_HOLD, IN_PROGRESS, CLOSED, OPEN values ",Negative,application/json,application/json,"{
+  ""subject"": ""iot-app"",
+  ""description"": ""app-management services"",
+  ""status"": ""testing""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""status value is invalid""
+}",
+TC_AM_86,Impressico28june,Verify update ticket by ID by sending additional field in request payload ,Negative,application/json,application/json,"{
+  ""subject"": ""iot-app"",
+  ""description"": ""app-management services"",
+  ""status"": ""ON_HOLD"",
+  ""additionalTestingField"": ""This is testinmg field""
+}",400,"{
+""status"": ""Failure"",
+""message"": ""Extra field is present in the payload:(.+?)""
+}",
+TC_AM_87,Testing_25,Verify update tickets by ID with unregister X-TENANTID ,Negative,application/json,application/json,"{
+  ""subject"": ""iot-app"",
+  ""description"": ""app-management services"",
+  ""status"": ""IN_PROGRESS""
+}",404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}",
+TC_AM_88,,Verify update tickets by ID when X-TENANTID field is missing,Negative,application/json,application/json,"{
+  ""subject"": ""iot-app"",
+  ""description"": ""app-management services"",
+  ""status"": ""IN_PROGRESS""
+}",404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}",
+TC_AM_91,Impressico28june,Verify update tickets by ID when accept key value is invalid in request payload ,Negative,application/js,application/json,"{
+  ""subject"": ""iot-app"",
+  ""description"": ""app-management services"",
+  ""status"": ""IN_PROGRESS""
+}",406,,"
+{
+  ""type"": ""about:blank"",
+  ""title"": ""Not Acceptable"",
+  ""status"": 406,
+  ""detail"": ""(.*?)"",
+  ""instance"": ""/am/api/v1/tickets/(.+)""
+}"
+TC_AM_92,Impressico28june,Verify update tickets by ID when Content-type key value is invalid in request payload ,Negative,application/json,application/js,"{
+  ""subject"": ""iot-app"",
+  ""description"": ""app-management services"",
+  ""status"": ""IN_PROGRESS""
+}",415,,"{
+""type"": ""about:blank"",
+""title"": ""Unsupported Media Type"",
+""status"": 415,
+""detail"": ""(.*?)"",
+""instance"": ""/am/api/v1/tickets/(.+)""
+}"

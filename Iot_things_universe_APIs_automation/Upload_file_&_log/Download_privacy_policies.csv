@@ -1,0 +1,27 @@
+TestcaseNo,TestDescription,TenantId,Path_20,FileName_20,ExpectedCode_20,ExpectedResponse_20
+TC_AM_127,Verify download privacy policies file with all valid input,Impressico28june,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,PrivacyPolicy.html,200,
+TC_AM_128,Verify download privacy policies file with invalid file name ,Impressico28june,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,tnc.png,400,"{
+""status"": ""Failure"",
+""message"": ""Invalid file name""
+}"
+TC_AM_128,Verify download privacy policies file with invalid file name ,Impressico28june,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,tnc.txt,400,"{
+""status"": ""Failure"",
+""message"": ""Invalid file name""
+}"
+TC_AM_128,Verify download privacy policies file with invalid file name ,Impressico28june,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,Data.xlsx,400,"{
+""status"": ""Failure"",
+""message"": ""Invalid file name""
+}"
+TC_AM_128,Verify download privacy policies file with invalid file name ,Impressico28june,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,app.pdf,400,"{
+""status"": ""Failure"",
+""message"": ""Invalid file name""
+}"
+TC_AM_129,Verify download privacy policies file response with unregister X-TANANTID in request header,Testing_25,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,PrivacyPolicy.html,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}"
+TC_AM_130,Verify download privacy policies file content with uploaded file content ,Impressico28june,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,PrivacyPolicy.html,200,
+TC_AM_131,Verify download privacy policies file with missing X-TANANTID in request header,,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,PrivacyPolicy.html,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}"

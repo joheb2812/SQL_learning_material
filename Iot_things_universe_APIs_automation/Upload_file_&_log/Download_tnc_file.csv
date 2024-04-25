@@ -1,0 +1,20 @@
+TestcaseNo,TestDescription,TenantId,File_path_16,FileName_16,ExpectedCode_16,ExpectedResponse_16
+TC_AM_49,Verify download file response with all valid input,Impressico28june,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,T&C.html,200,
+TC_AM_50,Verify that requested file exist by inspecting the response body and headers ,Impressico28june,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,T&C.html,200,
+TC_AM_51,Verify download file response with invalid file name ,Impressico28june,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,tnc.txt,400,"{
+  ""status"": ""Failure"",
+  ""message"": ""File not found""
+}"
+TC_AM_52,Verify download file response with unregister X-TANANTID in request header,Testing_25,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,T&C.html,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}"
+TC_AM_53,Verify download file response with invalid file name ,Impressico28june,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,sample.log,400,"{
+  ""status"": ""Failure"",
+  ""message"": ""File not found""
+}"
+TC_AM_54,Verify download file response content with uploaded file content ,Impressico28june,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,T&C.html,200,
+TC_AM_55,Verify download file response with missing X-TANANTID in request header,,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,T&C.html,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}"

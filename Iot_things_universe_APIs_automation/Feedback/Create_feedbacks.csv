@@ -1,0 +1,207 @@
+TestCaseNo,TenantID,TestDescription,TestCaseType,accept,Content,Payload,ExpectedCode_1,ExpectedResponse_1,
+TC_AM_01,Impressico28june,To verify feedback creation with all valid inputs,Positive,application/json,application/json,"{
+""subject"": ""iot app"",
+""content"": ""app management"",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""rating"": 3
+}",200,"{
+""status"": ""Success"",
+""message"": ""feedback created successfully."",
+""data"": {
+""id"":  ""(.+)"",
+""subject"": ""iot app"",
+""content"": ""app management"",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""tenantId"": ""(.+?)"",
+""rating"": 3,
+ ""createdTime"": ""(.*?)""
+}
+}",
+TC_AM_02,Impressico28june,Verify feedback creation by passing empty payload ,Negative,application/json,application/json,,400,"{
+  ""status"": ""Failure"",
+  ""message"": ""Required request body is missing""
+}",
+TC_AM_03,Impressico28june,Verify feedback creation with missing subject field,Negative,application/json,application/json,"{
+""content"": ""app management"",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""rating"": 3
+}",400,"{
+""status"": ""Failure"",
+""message"": ""subject field is missing""
+}",
+TC_AM_04,Impressico28june,Verify feedback creation with missing content field,Negative,application/json,application/json,"{
+""subject"": ""iot app"",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""rating"": 3
+}",400,"{
+""status"": ""Failure"",
+""message"": ""content field is missing""
+}",
+TC_AM_05,Impressico28june,Verify feedback creation with missing userID field,Negative,application/json,application/json,"{
+""subject"": ""iot app"",
+""content"": ""app management"",
+""rating"": 3
+}",400,"{
+""status"": ""Failure"",
+""message"": ""userId field is missing""
+}",
+TC_AM_06,Impressico28june,Verify feedback creation with missing rating field,Negative,application/json,application/json,"{
+""subject"": ""iot app"",
+""content"": ""app management"",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""rating field is required or should not be empty""
+}",
+TC_AM_07,Impressico28june,Verify feedback creation by passing extra field in payload ,Negative,application/json,application/json,"{
+""subject"": ""iot app"",
+""content"": ""app management"",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""rating"": 3,
+""testField"": ""This is test value""
+}",400,"{
+""status"": ""Failure"",
+""message"":""Extra field is present in the payload:(.+)""
+}",
+TC_AM_08,Impressico28june,Verify feedback creation when subject field value is null ,Negative,application/json,application/json,"{
+""subject"": """",
+""content"": ""app management"",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""rating"": 3
+}",400,"{
+""status"": ""Failure"",
+""message"": ""please enter a valid subject""
+}",
+TC_AM_09,Impressico28june,Verify feedback creation when content field value is null ,Negative,application/json,application/json,"{
+""subject"": ""iot app"",
+""content"": """",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""rating"": 3
+}",400,"{
+""status"": ""Failure"",
+""message"": ""please enter a valid content""
+}",
+TC_AM_10,Impressico28june,Verify feedback creation when user ID field value is null ,Negative,application/json,application/json,"{
+""subject"": ""iot app"",
+""content"": ""app management"",
+""userId"": """",
+""rating"": 5
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""please enter a valid userId""
+}",
+TC_AM_11,Impressico28june,Verify feedback creation when rating field value is null ,Negative,application/json,application/json,"{
+""subject"": ""iot app"",
+""content"": ""app management"",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""rating"": """"
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""rating field is required or should not be empty""
+}",
+TC_AM_12,Impressico28june,Verify feedback creation by passing duplicate field value and verify response ID ,Negative,application/json,application/json,"{
+""subject"": ""iot app"",
+""content"": ""app management"",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""rating"": 5
+}",200,"{
+""status"": ""Success"",
+""message"": ""feedback created successfully."",
+""data"": {
+""id"":  ""(.+)"",
+""subject"": ""(.+?)"",
+""content"": ""(.+?)"",
+""userId"": ""(.+?)"",
+""tenantId"": ""(.+?)"",
+""rating"": ""(.+)"",
+ ""createdTime"": ""(.*?)""
+}
+}",
+TC_AM_13,Impressico28june,Verify feedback creation by passing integer value in subject field,Negative,application/json,application/json,"{
+""subject"": 12345,
+""content"": ""app management"",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""rating"": 5
+}",400,"{
+""status"": ""Failure"",
+""message"": ""please enter a valid subject""
+}",
+TC_AM_14,Impressico28june,Verify feedback creation by passing integer value in content field,Negative,application/json,application/json,"{
+""subject"": ""iot app"",
+""content"": 12345,
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""rating"": 5
+}",400,"
+{
+""status"": ""Failure"",
+""message"": ""please enter a valid content""
+}",
+TC_AM_15,Impressico28june,Verify feedback creation by passing invalid userID value in userId field,Negative,application/json,application/json,"{
+""subject"": ""iot app"",
+""content"": ""app management"",
+""userId"": ""bb4b0cff_6957_4c70_9b58_a14bc9053a59"",
+""rating"": 5
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""please enter a valid userId""
+}",
+TC_AM_16,Impressico28june,Verify feedback creation by passing unregister userID value in userId field,Negative,application/json,application/json,"{
+""subject"": ""iot app"",
+""content"": ""app management"",
+""userId"": ""bb4b0cff_6957-4c70-9b58-a14bc9053a60"",
+""rating"": 5
+}",400,"{
+    ""status"": ""Failure"",
+    ""message"": ""please enter a valid userId""
+}",
+TC_AM_17,Impressico28june,Verify feedback creation rating field accept only integer (0-5) value ,Negative,application/json,application/json,"{
+""subject"": ""iot app"",
+""content"": ""app management"",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""rating"": 6.6
+}",400,"{
+""status"": ""Failure"",
+""message"": ""rating must be less than or equal to 5""
+}",
+TC_AM_18,,Verify feedback creation null X-TENANTID in request header,Negative,application/json,application/json,"{
+""subject"": ""iot app"",
+""content"": ""app management"",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""rating"": 5
+}",404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}",
+TC_AM_19,Testing_25,Verify feedback creation with unregister X-TENANTID ,Negative,application/json,application/json,"{
+""subject"": ""iot app"",
+""content"": ""app management"",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""rating"": 5
+}",404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}",
+TC_AM_20,Impressico28june,Verify feedback creation when Content-type is invalid in request header,Negative,application/json,application/j,"{
+""subject"": ""iot app"",
+""content"": ""app management"",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""rating"": 5
+}",415,,"{
+""type"": ""about:blank"",
+""title"": ""Unsupported Media Type"",
+""status"": 415,
+""detail"": ""(.*?)"",
+""instance"": ""/am/api/v1/feedbacks""
+}"
+TC_AM_21,Impressico28june,Verify feedback creation when accept is invalid request header,Negative,application/j,application/json,"{
+""subject"": ""iot app"",
+""content"": ""app management"",
+""userId"": ""bb4b0cff-6957-4c70-9b58-a14bc9053a59"",
+""rating"": 5
+}",406,,"{
+""type"": ""about:blank"",
+""title"": ""Not Acceptable"",
+""status"": 406,
+""detail"": ""(.*?)"",
+""instance"": ""/am/api/v1/feedbacks""
+}"

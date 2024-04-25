@@ -1,0 +1,20 @@
+TestCaseNo,TenantID,TestDescription,TestCaseType,accept_4,Content_4,ExpectedCode_4,ExpectedtResponse_4,
+TC_AM_33,Impressico28june,Verify delete feedback with valid input ,Positive,application/json,application/json,200,"{
+""status"": ""Success"",
+""message"": ""Feedback deleted Successfully.""
+}",
+TC_AM_36,,Verify delete feedback when X-TENANTID value is null in request header,Negative,application/json,application/json,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}",
+TC_AM_37,Tensting_25,Verify delete feedback when passing un-registered X-TENANTID  value in request header,Negative,application/json,application/json,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}",
+TC_AM_38,Impressico28june,Verify delete feedback when content-type is invalid in request headers,Negative,application/js,application/json,406,,"{
+""type"": ""about:blank"",
+""title"": ""Not Acceptable"",
+""status"": 406,
+""detail"": ""(.*?)"",
+""instance"": ""/am/api/v1/feedbacks/(.+?)""
+}"

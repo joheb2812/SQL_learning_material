@@ -1,0 +1,23 @@
+TestCaseNo,TenantID,TestDescription,TestCaseType,accept_13,Content_13,pageNumber,pageSize,ExpectedCode_13,ExpectedResponse_13
+TC_AM_99,Impressico28june,Verify get all ticket with all valid input ,Positive,application/json,application/json,1,4,200,
+TC_AM_100,Testing_25,Verify get all ticket with unregister tenantID value,Negative,application/json,application/json,2,2,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}"
+TC_AM_101,,Verify get all ticket with null tenantID value,Negative,application/json,application/json,1,2,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}"
+TC_AM_102,,Verify get all ticket with missing tenantID field,Negative,application/json,application/json,1,2,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}"
+TC_AM_103,Impressico28june,"Verify get all ticket with invalid page number in request param (Use non-numeric value ex: abc, negative number ex: -1,-2 etc )",Negative,application/json,application/json,-2,3,400,"{
+""status"": ""Failure"",
+""message"": ""Page index must not be less than zero""
+}"
+TC_AM_104,Impressico28june,"Verify get all ticket with invalid page size in request param (Use non-numeric value ex: xyz, negative number ex: -1,-2 etc )",Negative,application/json,application/json,1,-2,400,"{
+""status"": ""Failure"",
+""message"": ""Page size must not be less than one""
+}"
+TC_AM_105,Impressico28june,"Verify get all ticket with minimum page number and page size in request param (Ex: 1,1)",Negative,application/json,application/json,1,1,200,

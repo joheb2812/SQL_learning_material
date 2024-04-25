@@ -1,0 +1,119 @@
+TestCaseNo,TenantID,TestDescription,TestCaseType,accept_10,Content_10,Payload,ExpectedCode_10,ExpectedResponse_10,
+TC_AM_56,Impressico28june,Verify create ticket response with all valid input ,Positive,application/json,application/json,"{
+  ""subject"": ""IOT app"",
+  ""description"": ""app-management service""
+}",200,"{
+  ""status"": ""Success"",
+  ""message"": ""Ticket created successfully."",
+  ""data"": {
+    ""id"":  ""(.+)"",
+    ""tenantId"": ""(.+?)"",
+    ""subject"": ""(.+?)"",
+    ""description"": ""(.+?)"",
+    ""status"": ""OPEN"",
+    ""created_by"": ""Admin"",
+    ""createdTime"": ""(.*?)""
+  }
+}",
+TC_AM_57,Impressico28june,"Verify create ticket when ""subject"" field is missing from request payload ",Negative,application/json,application/json,"{
+  ""description"": ""app-management service""
+}",400,"{
+""status"": ""Failure"",
+""message"": ""subject field is missing""
+}",
+TC_AM_58,Impressico28june,"Verify create ticket when ""description"" field is missing from request payload ",Negative,application/json,application/json,"{
+  ""subject"": ""IOT app""
+}",400,"{
+""status"": ""Failure"",
+""message"": ""description field is missing""
+}",
+TC_AM_59,Impressico28june,"Verify create ticket when ""subject"" field is null in request payload ",Negative,application/json,application/json,"{
+  ""subject"": """",
+  ""description"": ""app-management service""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""please enter a valid subject""
+}",
+TC_AM_60,Impressico28june,"Verify create ticket when ""description"" field is null in request payload ",Negative,application/json,application/json,"{
+  ""subject"": ""IOT app"",
+  ""description"": """"
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""please enter a valid description""
+}",
+TC_AM_61,Impressico28june,Verify create ticket by sending empty payload ,Negative,application/json,application/json,,400,"{
+""status"": ""Failure"",
+""message"": ""Payload is missing""
+}",
+TC_AM_62,Impressico28june,Verify create tickets by sending integer value in request subject field,Negative,application/json,application/json,"{
+  ""subject"": 12345,
+  ""description"": ""app-management services""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""please enter a valid subject""
+}",
+TC_AM_63,Impressico28june,"Verify create tickets by sending integer value in request ""description"" field",Negative,application/json,application/json,"{
+  ""subject"": ""IOT app"",
+  ""description"": 12345
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""please enter a valid description""
+}",
+TC_AM_64,Impressico28june,Verify create tickets by sending additional field in request payload ,Negative,application/json,application/json,"{
+  ""subject"": ""IOT app"",
+  ""description"": ""app-management service"",
+  ""testfield"": ""test field""
+}
+",400,"{
+""status"": ""Failure"",
+""message"":""Extra field is present in the payload:(.+)""
+}",
+TC_AM_65,Testing_25 ,Verify create tickets by sending unregister X-TENANTID,Negative,application/json,application/json,"{
+  ""subject"": ""IOT app"",
+  ""description"": ""app-management service""
+}
+",404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}",
+TC_AM_66,Impressico28june,"Verify create tickets by using registered field value
+(Ticket ID will generate unique for duplicate field value )",Positive,application/json,application/json,"{
+  ""subject"": ""IOT app"",
+  ""description"": ""app-management service""
+}
+",200,"{
+  ""status"": ""Success"",
+  ""message"": ""Ticket created successfully."",
+  ""data"": {
+    ""id"":  ""(.+)"",
+    ""tenantId"": ""(.+?)"",
+    ""subject"": ""(.+?)"",
+    ""description"": ""(.+?)"",
+    ""status"": ""OPEN"",
+    ""created_by"": ""Admin"",
+    ""createdTime"": ""(.*?)""
+  }
+}",
+TC_AM_67,Impressico28june,Verify create tickets when accept key value is invalid in request headers,,application/js,application/json,"{
+  ""subject"": ""IOT app"",
+  ""description"": ""app-management service""
+}
+",406,,"
+{
+""type"": ""about:blank"",
+""title"": ""Not Acceptable"",
+""status"": 406,
+""detail"": ""(.*?)"",
+""instance"": ""/am/api/v1/tickets""
+}"
+TC_AM_68,Impressico28june,Verify create tickets when content-type key value is invalid in request headers,,application/json,application/js,"{
+  ""subject"": ""IOT app"",
+  ""description"": ""app-management service""
+}
+",415,,"{
+""type"": ""about:blank"",
+""title"": ""Unsupported Media Type"",
+""status"": 415,
+""detail"": ""(.*?)"",
+""instance"": ""/am/api/v1/tickets""
+}"

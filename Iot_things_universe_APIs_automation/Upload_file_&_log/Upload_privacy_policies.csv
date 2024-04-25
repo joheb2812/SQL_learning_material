@@ -1,0 +1,37 @@
+TestcaseNo,TestDescription,TenantId,Accept_19,Path_19,FileName_19,ExpectedCode_19,ExpectedResponse_19,
+TC_AM_120,Verify upload privacy policies file response with all valid input,Impressico28june,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,PrivacyPolicy.html,200,"{
+""status"": ""Success"",
+""message"": ""File uploaded"",
+""data"": ""File uploaded""
+}",
+TC_AM_121,Verify upload privacy policies file response by sending other than .html file in payload ,Impressico28june,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,tnc.png,400,"{
+""status"": ""Failure"",
+""message"": ""Only html file extension is allowed""
+}",
+TC_AM_121,Verify upload privacy policies file response by sending other than .html file in payload ,Impressico28june,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,tnc.txt,400,"{
+""status"": ""Failure"",
+""message"": ""Only html file extension is allowed""
+}",
+TC_AM_121,Verify upload privacy policies file response by sending other than .html file in payload ,Impressico28june,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,Data.xlsx,400,"{
+""status"": ""Failure"",
+""message"": ""Only html file extension is allowed""
+}",
+TC_AM_121,Verify upload privacy policies file response by sending other than .html file in payload ,Impressico28june,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,app.pdf,400,"{
+""status"": ""Failure"",
+""message"": ""Only html file extension is allowed""
+}",
+TC_AM_124,Verify upload privacy policies file response by sending unregister X-TANANTID in request header,Testing_25,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,PrivacyPolicy.html,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}",
+TC_AM_125,Verify upload privacy policies file response when X-TANANTID field is not present in request header,,application/json,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,PrivacyPolicy.html,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}",
+TC_AM_126,Verify upload privacy policies file response when invalid accept header in request header,Impressico28june,application/js,/home/impressico/Documents/Iot_things_universe_APIs_automation/Upload_file_&_log/file,PrivacyPolicy.html,406,,"{
+""type"": ""about:blank"",
+""title"": ""Not Acceptable"",
+""status"": 406,
+""detail"": ""(.*?)"",
+""instance"": ""/am/api/v1/files/privacyPolicies/upload""
+}"

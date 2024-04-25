@@ -1,0 +1,155 @@
+TestCaseNo,TenantID,TestDescription,TestCaseType,accept_5,Content_5,Payload,ExpectedCode_5,ExpectedResponse_5,,,
+TC_AM_132,Impressico28june,Verify that API response is Successful if all headers and payload is accurate and as per req. ,Positive,application/json,application/json,"{
+""question"": ""what is your question"",
+""answer"": ""application was good"",
+""faq_order"": ""1"",
+""category"": ""mobile""
+}",200,"{
+    ""status"": ""Success"",
+    ""message"": ""faq created successfully."",
+    ""data"": {
+        ""id"":  ""(.+)"",
+        ""tenant_id"": ""(.+?)"",
+        ""question"": ""what is your question"",
+        ""answer"": ""application was good"",
+        ""faq_order"": 1,
+        ""category"": ""mobile"",
+        ""created_by"": ""Admin"",
+        ""createdTime"": ""(.*?)""
+    }
+}",,,
+TC_AM_133,Impressico28june,"Verify that api is not executed successfully , when inavild accept type is present",Negative,application/js,application/json,"{
+""question"": ""what is your question"",
+""answer"": ""application was good"",
+""faq_order"": ""1"",
+""category"": ""mobile""
+}",406,,,,"{
+  ""type"": ""about:blank"",
+  ""title"": ""Not Acceptable"",
+  ""status"": 406,
+  ""detail"": ""(.*?)"",
+  ""instance"": ""/am/api/v1/faqs""
+}"
+TC_AM_134,Impressico28june,"Verify that api is not executed successfully , when invalid/wrong
+content type header is there OR content header not present",Negative,application/json,application/js,"{
+""question"": ""what is your question"",
+""answer"": ""application was good"",
+""faq_order"": ""1"",
+""category"": ""mobile""
+}",415,,,,"{
+    ""type"": ""about:blank"",
+    ""title"": ""Unsupported Media Type"",
+    ""status"": 415,
+    ""detail"": ""(.*?)"",
+    ""instance"": ""/am/api/v1/faqs""
+}"
+TC_AM_135,Testing_25,Verify that api response is according to req. after passing unregistered tenant name as header,Negative,application/json,application/json,"{
+""question"": ""what is your question"",
+""answer"": ""application was good"",
+""faq_order"": ""1"",
+""category"": ""mobile""
+}",404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}",,,"{
+""status"": ""Failure"",
+""message"": ""Please try with correct Tenant!""
+}"
+TC_AM_136,,Verify that api response is according to req. With missing tenant header,Negative,application/json,application/json,"{
+""question"": ""what is your question"",
+""answer"": ""application was good"",
+""faq_order"": ""1"",
+""category"": ""mobile""
+}",404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}",,,"{
+""status"": ""Failure"",
+""message"": ""Please provide a Tenant!""
+}"
+TC_AM_137,Impressico28june,Verify that faq order field does not take any other input than integer,Negative,application/json,application/json,"{
+""question"": ""what is your feedback"",
+""answer"": ""application was good"",
+""faq_order"": 3.6,
+""category"": ""mobile""
+}",400,"{
+    ""status"": ""Failure"",
+    ""message"": ""please enter integer value in faq_order""
+}",,,
+TC_AM_138,Impressico28june,Verify that Category field does not accept any other input than mobile / web,Negative,application/json,application/json,"{
+""question"": ""what is your question"",
+""answer"": ""application was good"",
+""faq_order"": ""1"",
+""category"": ""ios""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""Please enter a valid category (web or mobile)""
+}",,,
+TC_AM_139,Impressico28june,Verify that API response is negative if question field is set to null,Negative,application/json,application/json,"{
+""question"": """",
+""answer"": ""application was good"",
+""faq_order"": ""1"",
+""category"": ""mobile""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""please enter a valid question""
+}",,,
+TC_AM_140,Impressico28june,Verify that API response is negative if answer field is set to null,Negative,application/json,application/json,"{
+""question"": ""what is your feedback"",
+""answer"": """",
+""faq_order"": ""1"",
+""category"": ""mobile""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""please enter a valid answer""
+}",,,
+TC_AM_141,Impressico28june,Verify that API response is negative if faq order field is set to null,Negative,application/json,application/json,"{
+""question"": ""what is your feedback"",
+""answer"": ""application was good"",
+""faq_order"": """",
+""category"": ""mobile""
+}",400,"{
+  ""status"":""Failure"",
+  ""message"":""please enter integer value in faq_order""
+}",,,
+TC_AM_142,Impressico28june,Verify that API response is negative if category field is set to null,Negative,application/json,application/json,"{
+""question"": ""what is your question"",
+""answer"": ""application was good"",
+""faq_order"": ""1"",
+""category"": """"
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""Please enter a valid category (web or mobile)""
+}",,,
+TC_AM_143,Impressico28june,Verify that API response is negative if question field is missing,Negative,application/json,application/json,"{
+""answer"": ""application was good"",
+""faq_order"": ""1"",
+""category"": ""mobile""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""Please enter a question""
+}",,,
+TC_AM_144,Impressico28june,Verify that API response is negative if answer field is missing,Negative,application/json,application/json,"{
+""question"": ""what is your question"",
+""faq_order"": ""1"",
+""category"": ""mobile""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""Please enter an answer""
+}",,,
+TC_AM_145,Impressico28june,Verify that API response is negative if faq order field is missing,Negative,application/json,application/json,"{
+""question"": ""what is your question"",
+""answer"": ""application was good"",
+""category"": ""mobile""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""Please enter faq_order""
+}",,,
+TC_AM_146,Impressico28june,Verify that API response is negative if category field is missing,Negative,application/json,application/json,"{
+""question"": ""what is your question"",
+""answer"": ""application was good"",
+""faq_order"": ""1""
+}",400,"{
+""status"": ""Failure"",
+""message"": ""Please enter a category""
+}",,,

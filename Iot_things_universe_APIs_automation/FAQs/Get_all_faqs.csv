@@ -1,0 +1,27 @@
+TestCaseNo,TenantID,TestDescription,TestCaseType,accept_6,Content_6,category,ExpectedCode_6,ExpectedResponse_6
+TC_AM_147,Impressico28june,Verify that API response is Successful if all headers and payload is accurate and as per requirement,Positive,application/json,application/json,mobile,200,
+TC_AM_148,Impressico28june,"Verify that api is not executed successfully , when inavild accept type is present",Negative,application/js,application/json,web,406,"{
+  ""type"": ""about:blank"",
+  ""title"": ""Not Acceptable"",
+  ""status"": 406,
+  ""detail"": ""(.*?)"",
+  ""instance"": ""/am/api/v1/faqs""
+}"
+TC_AM_149,testing_25,"Verify that api response is according to req. after passing unregistered
+tenant name as header",Negative,application/json,application/json,mobile,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}"
+TC_AM_150,,"Verify that api response is according to req. 
+with missing tenant header",Negative,application/json,application/json,web,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}"
+TC_AM_151,Impressico28june,Verify that API reponse is negative for invalid category param,Negative,application/json,application/json,ios,404,"{
+""status"": ""Failure"",
+""message"": ""Please provide a valid category""
+}"
+TC_AM_152,Impressico28june,Verify that API reponse is negative for Missing category param,Negative,application/json,application/json,,404,"{
+    ""status"": ""Failure"",
+    ""message"": ""Please provide a valid category""
+}"

@@ -1,0 +1,18 @@
+TestCaseNo,TenantID,TestDescription,TestCaseType,accept_3,Content_3,pageNum,pageSize,ExpectedCode_3,ExpectedResponse_3,
+TC_AM_28,Impressico28june,Verify fetch all feedback with valid input,Positive,application/json,application/json,1,3,200,,
+TC_AM_29,Testing_2_5,Verify get all feedback by passing non-register X-TANANTID ,Negative,application/json,application/json,1,2,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}",
+TC_AM_30,Impressico28june,Verify fetch all feedback by passing invalid pageNum and pageSize in request param,Negative,application/json,application/json,-1,0,400,"{
+""status"": ""Failure"",
+""message"": ""Page size must not be less than one""
+}",
+TC_AM_31,Impressico28june,Verify fetch all feedback by missing pageNum and pageSize parameter,Negative,application/json,application/json,,,200,,
+TC_AM_32,Impressico28june,Verify fetch all feedback when accept is invalid in request header,Negative,application/js,application/json,1,4,406,,"{
+""type"": ""about:blank"",
+""title"": ""Not Acceptable"",
+""status"": 406,
+  ""detail"": ""(.*?)"",
+""instance"": ""/am/api/v1/feedbacks""
+}"

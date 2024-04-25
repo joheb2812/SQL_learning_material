@@ -1,0 +1,2 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1679030634201,349,Delete device,204,No Content,Delete device 1-1,text,true,,74,227,1,1,http://192.168.59.125:30500/v1/devices/org.home,0,0,1

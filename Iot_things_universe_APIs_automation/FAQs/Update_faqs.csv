@@ -1,0 +1,204 @@
+TestCaseNo,TenantID,TestDescription,TestCaseType,accept_7,Content_7,Payload,ExpectedCode_7,ExpectedResponse_7,,
+TC_AM_153,Impressico28june,Verify that FAQ is updated succesfully when faq order data is changed,Positive,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""faq_order"": 5,
+  ""category"": ""web""
+}",200,"{
+    ""message"": ""Faq has been updated Successfully."",
+    ""status"": ""Success""
+}",,
+TC_AM_154,Impressico28june,Verify that FAQ is updated succesfully when question data is changed,Positive,application/json,application/json,"{
+  ""question"": ""What is IOT application"",
+  ""answer"": ""IOT application is good"",
+  ""faq_order"": 2,
+  ""category"": ""web""
+}",200,"{
+    ""message"": ""Faq has been updated Successfully."",
+    ""status"": ""Success""
+}",,
+TC_AM_155,Impressico28june,Verify that FAQ is updated succesfully when answer data is changed,Positive,application/json,application/json,"{
+  ""question"": ""Can we register a multiple device"",
+  ""answer"": ""Yes we can register multiple device"",
+  ""faq_order"": 2,
+  ""category"": ""web""
+}",200,"{
+    ""message"": ""Faq has been updated Successfully."",
+    ""status"": ""Success""
+}",,
+TC_AM_156,Impressico28june,Verify that FAQ is updated succesfully when category data is changed,Positive,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""faq_order"": 2,
+  ""category"": ""web""
+}",200,"{
+    ""message"": ""Faq has been updated Successfully."",
+    ""status"": ""Success""
+}",,
+TC_AM_157,Impressico28june,"Verify that api is not executed successfully , when inavild accept type is present",Negative,application/js,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""faq_order"": 2,
+  ""category"": ""web""
+}",406,,,"{
+""type"": ""about:blank"",
+""title"": ""Not Acceptable"",
+""status"": 406,
+""detail"": ""(.*?)"",
+""instance"": ""/am/api/v1/faqs/(.+)""
+}"
+TC_AM_158,Impressico28june,"Verify that api is not executed successfully , when invalid/wrong
+content type header is there OR content header not present",Negative,application/json,application/js,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""faq_order"": 2,
+  ""category"": ""web""
+}",415,,,"{
+""type"": ""about:blank"",
+""title"": ""Unsupported Media Type"",
+""status"": 415,
+""detail"": ""(.*?)"",
+""instance"": ""/am/api/v1/faqs/(.+)""
+}"
+TC_AM_159,Testing_25,"Verify that api response is according to req. after passing unregistered
+tenant name as header",Negative,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""faq_order"": 2,
+  ""category"": ""web""
+}",404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}",,
+TC_AM_160,,"Verify that api response is according to req. 
+with missing tenant header",Negative,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""faq_order"": 2,
+  ""category"": ""web""
+}",404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}",,
+TC_AM_161,Impressico28june,Verify that faq order field does not take any other input than integer,Negative,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""faq_order"": 4.4,
+  ""category"": ""web""
+}",400,"{
+""status"": ""Failure"",
+""message"": ""please enter integer value in faq_order""
+}",,
+TC_AM_162,Impressico28june,Verify that Category field does not accept any other input that mobile / web,Negative,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""faq_order"": 2,
+  ""category"": ""ios""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""Please enter a valid category (web or mobile)""
+}",,
+TC_AM_163,Impressico28june,Verify that API response is negative if question field is set to null,Negative,application/json,application/json,"{
+  ""question"": """",
+  ""answer"": ""application was good"",
+  ""faq_order"": 2,
+  ""category"": ""web""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""please enter a valid question""
+}",,
+TC_AM_164,Impressico28june,Verify that API response is negative if answer field is set to null,Negative,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": """",
+  ""faq_order"": 2,
+  ""category"": ""web""
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""please enter a valid answer""
+}",,
+TC_AM_165,Impressico28june,Verify that API response is negative if faq order field is set to null,Negative,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""faq_order"": """",
+  ""category"": ""web""
+}",400,"{
+""status"": ""Failure"",
+""message"": ""please enter integer value in faq_order""
+}",,
+TC_AM_166,Impressico28june,Verify that API response is negative if category field is set to null,Negative,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""faq_order"": 2,
+  ""category"": """"
+}",400,"
+{
+  ""status"": ""Failure"",
+  ""message"": ""Please enter a valid category (web or mobile)""
+}",,
+TC_AM_167,Impressico28june,Verify that API response is negative if question field is missing,Negative,application/json,application/json,"{
+  ""answer"": ""application was good"",
+  ""faq_order"": 2,
+  ""category"": ""web""
+}",400,"{
+""status"": ""Failure"",
+""message"": ""Please enter a question""
+}",,
+TC_AM_168,Impressico28june,Verify that API response is negative if answer field is missing,Negative,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""faq_order"": 2,
+  ""category"": ""web""
+}",400,"{
+""status"": ""Failure"",
+""message"": ""Please enter an answer""
+}",,
+TC_AM_169,Impressico28june,Verify that API response is negative if faq order field is missing,Negative,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""category"": ""web""
+}",400,"{
+""status"": ""Failure"",
+""message"": ""Please enter faq_order""
+}",,
+TC_AM_170,Impressico28june,Verify that API response is negative if category field is missing,Negative,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""faq_order"": 2
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""Please enter a category""
+}",,
+TC_AM_171,Impressico28june,Verify that API reponse is negative for invalid category param,Negative,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""faq_order"": 2,
+  ""category"": ""web""
+}",400,"{
+""status"": ""Failure"",
+""message"": ""Please provide a valid category""
+}",,
+TC_AM_172,Impressico28june,Verify that API reponse is negative for Missing category param,Negative,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""faq_order"": 2
+}",400,"{
+  ""status"": ""Failure"",
+  ""message"": ""Please enter a category""
+}",,
+TC_AM_173,Impressico28june,Verify that API reponse is negative for faq param not in db,Negative,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""faq_order"": 2,
+  ""category"": ""web""
+}",404,"{
+""status"": ""Failure"",
+""message"": ""Faq ID not found""
+}",,
+TC_AM_174,Impressico28june,Verify that API reponse is negative for Missing faq path var,Negative,application/json,application/json,"{
+  ""question"": ""how was application"",
+  ""answer"": ""application was good"",
+  ""faq_order"": 2,
+  ""category"": ""web""
+}",400,"{
+""status"": ""Failure"",
+""message"": ""Please provide a valid faq id""
+}",,

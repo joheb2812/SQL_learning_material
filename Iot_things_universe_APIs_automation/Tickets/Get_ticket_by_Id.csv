@@ -1,0 +1,31 @@
+TestCaseNo,TenantID,TestDescription,TestCaseType,Accept_11,Content_11,ExpectedCode_11,ExpectedResponse_11,
+TC_AM_69,Impressico28june,Verify get ticket by ID with all valid input ,Positive,application/json,application/json,200,"{
+""status"": ""Success"",
+""message"": ""Ticket details fetched successfully."",
+""data"": {
+""id"":  ""(.+)"",
+""tenantId"": ""(.+?)"",
+""subject"": ""(.+?)"",
+""description"": ""(.+?)"",
+""status"": ""(.+?)""
+}
+}",
+TC_AM_71,Testing_25,Verify get ticket by ID with unregister tenantID value,Negative,application/json,application/json,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}",
+TC_AM_72,,Verify get ticket by ID with null tenantID value,Negative,application/json,application/json,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}",
+TC_AM_73,,Verify get ticket by ID with missing tenantID field,Negative,application/json,application/json,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}",
+TC_AM_74,Impressico28june,Verify get ticket by ID when accept key value is invalid in request headers ,Negative,application/js,application/json,406,,"{
+  ""type"": ""about:blank"",
+  ""title"": ""Not Acceptable"",
+  ""status"": 406,
+  ""detail"": ""(.*?)"",
+  ""instance"": ""/am/api/v1/tickets/(.+)""
+}"

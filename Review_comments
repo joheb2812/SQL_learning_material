@@ -1,0 +1,41 @@
+1. Follow naming conventions for file names. table names, table column names-Done
+2. Move db config to env (try using dotenv library)-Done
+3. Use a seprate lib which allows you to use models / data classes which represent a table entity
+4. Find if the existing library you are using (flask_mysqldb) uses a connection pool. If yes then good, else try using connection pool.-Done
+Use try, except and finally block-- Done
+No Db call in loop.
+
+
+    def get_all_users(self):
+        conn = self.db.get_connection()
+        try:
+            cursor = conn.cursor()
+            cursor.execute("SELECT * FROM Users")
+            users_data = cursor.fetchall()           
+            users = []
+            for row in users_data:
+                cursor.execute("SELECT * FROM Transactions WHERE userId IN (%s) ORDER BY transactionDate DESC LIMIT 5",
+                               (row[0],))
+                transaction_data = cursor.fetchall()
+                transactions = []
+                for data in transaction_data:
+                    transaction = Transactios(data[0],
+                                              data[1].strftime("%Y-%m-%d"),
+                                              float(data[2]),
+                                              data[3])
+                    transactions.append(transaction.__dict__)
+                user_data = User(row[0], row[1], row[2])
+                users.append({
+                    "user": user_data.__dict__,
+                    "transactions": transactions
+                })
+            return users
+
+        except MySQLdb.Error as e:
+            print(f"An error occurred: {e}")
+            abort(500, message="Internal server error")
+        finally:
+            with conn.cursor() as cursor:
+                cursor.close()
+            conn.close()
+

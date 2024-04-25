@@ -1,0 +1,756 @@
+98b857ac-02ba-4dc9-822b-3cfff270997c
+
+a7f126ca-0ab2-11ee-be56-0242ac120002
+
+
+
+all FYI 
+notification service URL : http://notification-management.impressicocrm.com:30336
+
+curl --location 'http://notification-management.impressicocrm.com:30336/nm/api/v1/notify/emailNotification' \
+--header 'X-TENANTID: abc' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "subject":"test subject"
+    ,"name":"firsttrigger",
+    "to":{
+            "subscriberId": "6486eb864a50ec3fd729aed1",
+  "email": "amit.raghav@impressico.com"
+
+    },"payload":{
+
+    }
+}'
+   
+   
+   4ef894ed-14a6-47d7-88eb-175f6e825b90
+   80512e34-419d-492e-adfd-c90b55a7b9a4
+   108c7f43-83c3-435b-95e9-567385cea40d
+   
+   a7f126ca-0ab2-11ee-be56-0242ac120002
+   
+   
+Please find the  hono ditto URL :
+
+#hono
+        hono-mqtt: http://c2e-http.impressicocrm.com:30883/
+        hono-http: http://c2e-http.impressicocrm.com:/30443/
+        hono-amqp: http://c2e-amqp.impressicocrm.com:/32671/
+        hono-device-registry: https://c2e-device-registry-external.impressicocrm.com:31443
+        hono-kafka: http://c2e-kafka-external.impressicocrm.com:30883/
+
+    #ditto
+        ditto-nginx: http://c2e-nginx.impressicocrm.com:31646/
+
+        credentials:
+            /status
+                userName: devops
+                password: fG8oFsDC7V0q
+
+            /devops: 
+                userName: devops
+                password: FtOIbQmrOMcf
+                
+                
+                
+                
+      value="605280a45bc2ea5ed92c35cb852742e8"
+      
+      
+      
+Use below address for connection API and test it 
+ssl://hono:hono-secret@c2e-hono-kafka-0-external:9094
+
+"ca": "-----BEGIN CERTIFICATE-----\nMIICPjCCAeOgAwIBAgIUB2vxWI9wj32OHLaABVV+iuVkdTUwCgYIKoZIzj0EAwIwUDELMAkGA1UEBhMCQ0ExDzANBgNVBAcMBk90dGF3YTEUMBIGA1UECgwLRWNsaXBzZSBJb1QxDTALBgNVBAsMBEhvbm8xCzAJBgNVBAMMAmNhMB4XDTIzMDYyNDA5MDYwMFoXDTI0MDYyMzA5MDYwMFowUzELMAkGA1UEBhMCQ0ExDzANBgNVBAcMBk90dGF3YTEUMBIGA1UECgwLRWNsaXBzZSBJb1QxDTALBgNVBAsMBEhvbm8xDjAMBgNVBAMMBWthZmthMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEM2N+LKI2aa05/7qR4p3LtL3xptiPErCIM+oCHtf656Z05LEfl94eW28UjNIZiLed2jOujmid24JrDOehUgKviqOBlzCBlDAdBgNVHQ4EFgQUiu3K+qTJPgoF5v1LaToQCDGWbSowCwYDVR0PBAQDAgOoMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBHBgNVHREEQDA+ghUqLmhvbm8ta2Fma2EtaGVhZGxlc3OCGiouaG9uby1rYWZrYS1oZWFkbGVzcy5ob25vgglsb2NhbGhvc3QwCgYIKoZIzj0EAwIDSQAwRgIhAOdxFN9a0sJsoVXgIlZ7UFTYC2zfUsoVWxZPYvBUzxgmAiEA98xEwyXPYO0NexdvlSMO3Rqne4EG1O5r4SBb1EagBsk=\n-----END CERTIFICATE-----\n",
+
+
+
+
+Please find new base URLs in below 
+
+
+Base URLS: 
+    UM: https://user-management.impressicocrm.com/um/api/v1
+    DM: https://device-management.impressicocrm.com/dm/api/v1
+    TM: https://tenant-management.impressicocrm.com/tm/api/v1
+    AM: https://app-management.impressicocrm.com/am/api/v1
+    NM: https://notification-management.impressicocrm.com/nm/api/v1
+    
+    
+a7f126ca-0ab2-11ee-be56-0242ac120002
+
+460c06a7-bffd-47d5-a5ea-4b54b42f31b1
+
+
+
+         eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJmeVEyYTJ5NDN0SWNnWUZ5aFctQWIxaTQ4VHpoWW9LY3F2N0dyV01hWnl3In0.eyJleHAiOjE2ODkzMTM3MzksImlhdCI6MTY4OTMxMzQzOSwianRpIjoiOThmOWNmYmUtZDVkYy00MWM1LWIwZWUtNGNkNjcxNmZiYmZhIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmltcHJlc3NpY29jcm0uY29tOjMyNTQxL3JlYWxtcy9Tb255IiwiYXVkIjpbIk1vYmlsZS1jbGllbnQiLCJhY2NvdW50Il0sInN1YiI6ImE3NDVhMmU0LTVhM2QtNGU0ZS1iZjA1LWU4Y2EzMTJhN2U0ZSIsInR5cCI6IkJlYXJlciIsImF6cCI6IldlYi1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiZDNhMzNkODMtYzg2OS00NTA3LWI1ZTgtZjZmZTQzZTJhMWVlIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vdXNlci1tYW5hZ2VtZW50LmltcHJlc3NpY29jcm0uY29tOjMyMzk5Il0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJNT0JJTEVfVVNFUiIsImRlZmF1bHQtcm9sZXMtaW1wcmVzc2ljby1zb255Iiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7Ik1vYmlsZS1jbGllbnQiOnsicm9sZXMiOlsiTU9CSUxFX1VTRVIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6ImQzYTMzZDgzLWM4NjktNDUwNy1iNWU4LWY2ZmU0M2UyYTFlZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiSm9oZWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIiwiZ2l2ZW5fbmFtZSI6IkpvaGViIiwiZW1haWwiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIn0.bNXNo0NSx01rvGODvwoF677SDoAnaP8Pk2HOQ7gRzuoMhpGZ4kqGdIOCvHNjYpOweYdEJXJ801V4YD30dwvdyQMtjtP49hlNUFhFlUew8qBeZXPFAX0RI_q6dS8RkeBpKdsqapOyLKvakAHTPNHY-JSVUJeOdhtsDidTQ_fkXErgfERFPbwHSQsWuESVEa4ePZcj3lMJEkVYPP1og7mGsbfce2wmyovgYvlQUdxnXFQKcEpnQSEYTljbH-mhaBLoygmCdnyrr3SwkSM7pWaJvnTkjsEr-RTWNoZwnvyKdRfIP6sGwYM-tfT9z_RA6WrvU_IzS9kYpOH4q2MyCCiQ0Q
+         
+         
+    
+     {
+    "status": "Failure",
+    "message": "ERROR: relation \"tenant_notification\" does not exist\n  Position: 13"
+}
+     
+
+
+{
+    "status": "Failure",
+    "message": "ERROR: duplicate key value violates unique constraint \"tenant_notification_pkey\"\n  Detail: Key (tenant_id)=(Sony) already exists."
+}
+
+
+User A  login and got bearer token 
+User B  login and got bearer token 
+
+By using user A bearer token can we access user B other API like, getbyID, deleteById etc.
+
+
+
+26b40d2a-b7dd-4d5b-b06d-89729f0796ad
+
+42680b48-7648-4862-ade3-4da0a110476e
+
+
+9d2e4431-c270-4e3b-b109-6d13a3d7ca1c
+
+
+
+SUPER_ADMIN_USER:
+katkuri.ramesh@Impressico.com
+Welcome@123
+
+  "email":"katkurirameshjava@gmail.com",
+    "password":"Welcome@123"
+
+INTERNAL_USER:
+katkuriramesh217@gmail.com
+Welcome@123
+
+
+
+
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIiwiaWF0IjoxNjk0NTg1NjI1LCJleHAiOjE2OTQ1ODc0MjV9.HajbtunyY9-XWVV-nBQNmyt0diH00-zeyZ-kvXbVXMs
+
+
+===============================================================
+Date: 14 september 2023 
+1. enabled property is present in response message in swagger but not getting in API response for delete tenant
+2. DM swagger needs to update for tenant API 
+3. NM swagger update for create tenant and exposed API key API
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+"userName": "35dba210-c285-41d6-9067-040f49b335f8",
+"password": "rj0oG!xAU"
+
+Sony:35dba210-c285-41d6-9067-040f49b335f8
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+If URL contains invalid property ID it is giving 200 response.
+If a method name is PUT and content-type is application/merge-patch+json then 500 I am getting and vice versa.
+=============================================================
+Ex: 
+If user Role:
+      MOBILE_USER: login user can access his own data 
+      CUSTOMER_SUPPORT_ROLE: login user can access all the users data 
+
+
+
+=====================================================================
+Date: 25/10/2023
+UserId: c12e6c33-a804-44a0-8b7c-7bf109bb427b
+{
+    "status": "Success",
+    "message": "Devices data added successfully",
+    "data": {
+        "deviceId": "Sony:50549b01-78aa-4d27-a357-867d857ed6d7"
+    }
+}
+
+{
+    "status": "Success",
+    "message": "Device onboarded successfully",
+    "data": {
+        "userName": "50549b01-78aa-4d27-a357-867d857ed6d7",
+        "password": "b36pQn!CS"
+    }
+}
+
+=================================================================
+Date: 25/10/2023
+UserId: c12e6c33-a804-44a0-8b7c-7bf109bb427b
+{
+    "status": "Success",
+    "message": "Devices data added successfully",
+    "data": {
+        "deviceId": "Sony:95167347-4c77-4b55-bd88-bf37c9fcb4c2"
+    }
+}
+
+{
+    "status": "Success",
+    "message": "Device onboarded successfully",
+    "data": {
+        "userName": "95167347-4c77-4b55-bd88-bf37c9fcb4c2",
+        "password": "jwD@00ZN2"
+    }
+}
+
+if you have doubt we can clear with ramesh sir 
+this API we are using internally 
+if second time we will get details in response then device onboard time we will get conflicts internally 
+
+
+========================================================
+There is one issue i found when i will resent the password and access the refresh token API it is gettoing 200 success 
+
+
+
+{
+    "status": "Success",
+    "message": "Devices data added successfully",
+    "data": {
+        "deviceId": "Sony:343a4f23-d980-4fa0-9cd4-88b56ea688df"
+    }
+}
+
+{
+    "status": "Success",
+    "message": "Device onboarded successfully",
+    "data": {
+        "userName": "343a4f23-d980-4fa0-9cd4-88b56ea688df",
+        "password": "@m3Rsrm95"
+    }
+}
+
+Super Admin token
+-------------------
+
+eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJJRW1meDRZRFpETWtQRFd1UnZTZ1kyU2JnQ0RiVEd3YURtcTQyTGlDbzNJIn0.eyJleHAiOjE3MDA2ODU1NTYsImlhdCI6MTcwMDY0OTU1NiwianRpIjoiYWQxOWI4M2MtMTI2OC00MjhkLTg0YjItZTBkYTBlODkzNzc1IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmltcHJlc3NpY29jcm0uY29tOjMyMzUwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNTY1OTYxYTYtMjY3Yy00MTliLWEyNTktOGJiYjQ2NTU2ZDllIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiaW50ZXJuYWwtY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6ImM4Zjg0ZTFhLWZlMjktNGUyMC04OGM4LTM4OGJkMWQ1MzMyMiIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly91c2VyLW1hbmFnZW1lbnQuaW1wcmVzc2ljb2NybS5jb20iXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtbWFzdGVyIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsIklOVEVSTkFMX1VTRVIiXX0sInJlc291cmNlX2FjY2VzcyI6eyJpbnRlcm5hbC1jbGllbnQiOnsicm9sZXMiOlsiSU5URVJOQUxfVVNFUiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiYzhmODRlMWEtZmUyOS00ZTIwLTg4YzgtMzg4YmQxZDUzMzIyIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiS2F0a3VyaSBSYW1lc2giLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJrYXRrdXJpcmFtZXNoMjE3QGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJLYXRrdXJpIiwiZmFtaWx5X25hbWUiOiJSYW1lc2giLCJlbWFpbCI6ImthdGt1cmlyYW1lc2gyMTdAZ21haWwuY29tIn0.FutI4zEpjJC70tVjnj9yJLCJi77yCvWy7aspq6pJLMfW2M7pYJbBSCgRQMJEdOYaZGLaXZqIzKwtYxOTrbMNETEZYNezsfqaWiMj5Mw0xVoxpcvh_cX3ldjd0o5CMq0T47IWU4ZoTxMucDFlCy1X4Ku_iXt6u_bqnLzNbCwNhFMt4wwVUovVP-70awH8x6ZohNrWqwB5Uln-ZJ45RaPTVxiwN_bUGnDNndKeDzkmKCVfoBzFRpjDM_3eurEK-jRQARKVPlnbdgSjrMXw_7CTkLyGt24b1QsI_N3Zg9zaPgbJX-L0ujmBJf0yLm1-xIphUtZoDYInO5Q1vRPCzkNl4A
+
+eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJJRW1meDRZRFpETWtQRFd1UnZTZ1kyU2JnQ0RiVEd3YURtcTQyTGlDbzNJIn0.eyJleHAiOjE3MDA2ODU4MjEsImlhdCI6MTcwMDY0OTgyMSwianRpIjoiYjNlZmM5ZTEtYjUwZC00ZTc1LTkyNTMtYzdmMjIxMzg0NDdmIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmltcHJlc3NpY29jcm0uY29tOjMyMzUwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNTY1OTYxYTYtMjY3Yy00MTliLWEyNTktOGJiYjQ2NTU2ZDllIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiaW50ZXJuYWwtY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6ImRhNzUwYjliLTNkZmEtNDQ5Ny04ZTMxLWFlZGE2Yzk1ZDRjZSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly91c2VyLW1hbmFnZW1lbnQuaW1wcmVzc2ljb2NybS5jb20iXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtbWFzdGVyIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsIklOVEVSTkFMX1VTRVIiXX0sInJlc291cmNlX2FjY2VzcyI6eyJpbnRlcm5hbC1jbGllbnQiOnsicm9sZXMiOlsiSU5URVJOQUxfVVNFUiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiZGE3NTBiOWItM2RmYS00NDk3LThlMzEtYWVkYTZjOTVkNGNlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiS2F0a3VyaSBSYW1lc2giLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJrYXRrdXJpcmFtZXNoMjE3QGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJLYXRrdXJpIiwiZmFtaWx5X25hbWUiOiJSYW1lc2giLCJlbWFpbCI6ImthdGt1cmlyYW1lc2gyMTdAZ21haWwuY29tIn0.UcvOPRbEZkDxDTFh9oeD1ZOa-h-OakZixugk-IdflRhW757rQRdMDc69XlAoVelv7gRpm1_pWyrVGA32u3YDwXGLRL_MLCWxKe1sMCl-DSvNsjK4WH-zYu-p3Dkf-A0BQyh-JmoQCTwA7ZLLtacHiORa3Dp5WgrfYN-9RaR5O79nXsSFzKef3odPGm-Yj8jCDumGQjTOu-_CNsjbMDmQtqQHmFr67UqWzOgyQr3OXEIMDCDWrMuCJ25Gq5Sp8Jh6jXSkgVYcleEY8Vr5Vy87Gucw629gq8dBdPsGxiXc8Gd8laXgNx-i0a4qewT9xzEyRr4K9Ca4UI-Db6zfxcV3pw
+
+
+eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJJRW1meDRZRFpETWtQRFd1UnZTZ1kyU2JnQ0RiVEd3YURtcTQyTGlDbzNJIn0.eyJleHAiOjE3MDA2ODU4NTIsImlhdCI6MTcwMDY0OTg1MiwianRpIjoiNjVlMWQ4NWYtZmNjMC00YTJkLTk3NWQtM2ExODdkZTkxMDk4IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmltcHJlc3NpY29jcm0uY29tOjMyMzUwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNTY1OTYxYTYtMjY3Yy00MTliLWEyNTktOGJiYjQ2NTU2ZDllIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiaW50ZXJuYWwtY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6IjJlNzIwYWY2LTM4N2MtNDcyNC1hNTFlLWRjNDdmNzY5YjUyNCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly91c2VyLW1hbmFnZW1lbnQuaW1wcmVzc2ljb2NybS5jb20iXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtbWFzdGVyIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsIklOVEVSTkFMX1VTRVIiXX0sInJlc291cmNlX2FjY2VzcyI6eyJpbnRlcm5hbC1jbGllbnQiOnsicm9sZXMiOlsiSU5URVJOQUxfVVNFUiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiMmU3MjBhZjYtMzg3Yy00NzI0LWE1MWUtZGM0N2Y3NjliNTI0IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiS2F0a3VyaSBSYW1lc2giLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJrYXRrdXJpcmFtZXNoMjE3QGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJLYXRrdXJpIiwiZmFtaWx5X25hbWUiOiJSYW1lc2giLCJlbWFpbCI6ImthdGt1cmlyYW1lc2gyMTdAZ21haWwuY29tIn0.M1jDx2x8Sjkd2Yo_vMXRzUVMr5sYE_Q7JGq-GTcqq9ZVuiY1Ph8Zyko6MTf0ybx37M1ECU8Vg1unPefL8hWcsGzR-8dUEEd4X6YWJN4sF5qxd9yqe_JYMq52wg7WUwNRE0TLC3D53DVlDiySlWRLKWw8tthAzymc1mfKUwE-GQAQJOCL69B2N7WBg2o05CVCzhny6Pb2xgMmixOYTSfUop0LRdpDYnDZVYSH49JlxS_NoEQ9XrHVoo4BCc3aXA3gUH-asCqmwD1LeDVCCpzaLhYaLmkbPR5yjRA_OEWff--oQ5iSsaPqbdy_g9RurLgYu1y7HW8mr6jlkqAu371ihQ
+
+
+=======================================================================================================
+
+98b857ac-02ba-4dc9-822b-3cfff270997c
+
+a7f126ca-0ab2-11ee-be56-0242ac120002
+
+
+
+all FYI 
+notification service URL : http://notification-management.impressicocrm.com:30336
+
+curl --location 'http://notification-management.impressicocrm.com:30336/nm/api/v1/notify/emailNotification' \
+--header 'X-TENANTID: abc' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "subject":"test subject"
+    ,"name":"firsttrigger",
+    "to":{
+            "subscriberId": "6486eb864a50ec3fd729aed1",
+  "email": "amit.raghav@impressico.com"
+
+    },"payload":{
+
+    }
+}'
+   
+   
+   4ef894ed-14a6-47d7-88eb-175f6e825b90
+   80512e34-419d-492e-adfd-c90b55a7b9a4
+   108c7f43-83c3-435b-95e9-567385cea40d
+   
+   a7f126ca-0ab2-11ee-be56-0242ac120002
+   
+   
+Please find the  hono ditto URL :
+
+#hono
+        hono-mqtt: http://c2e-http.impressicocrm.com:30883/
+        hono-http: http://c2e-http.impressicocrm.com:/30443/
+        hono-amqp: http://c2e-amqp.impressicocrm.com:/32671/
+        hono-device-registry: https://c2e-device-registry-external.impressicocrm.com:31443
+        hono-kafka: http://c2e-kafka-external.impressicocrm.com:30883/
+
+    #ditto
+        ditto-nginx: http://c2e-nginx.impressicocrm.com:31646/
+
+        credentials:
+            /status
+                userName: devops
+                password: fG8oFsDC7V0q
+
+            /devops: 
+                userName: devops
+                password: FtOIbQmrOMcf
+                
+                
+                
+                
+      value="605280a45bc2ea5ed92c35cb852742e8"
+      
+      
+##Hono and Ditto dev env URL
+
+#hono
+        hono-mqtt: http://c2e-mqtt.impressicocrm.com:31454/
+        hono-http: http://c2e-http.impressicocrm.com:30443/
+        hono-amqp: http://c2e-amqp.impressicocrm.com:32671/
+        hono-device-registry: http://c2e-device-registry-external.impressicocrm.com:31133/
+        hono-kafka: http://c2e-kafka-external.impressicocrm.com:32094/
+
+#ditto
+        ditto-nginx: http://c2e-nginx.impressicocrm.com:31824/
+        
+        
+#devops username and password  
+       userName : devops and paswowrd : NsDT17CRxQb5 
+ 
+#Kafka Connection   
+     url : ssl://c2e-kafka-external.impressicocrm.com:32094
+  
+#UM swagger URL
+     https://swagger.impressicocrm.com/#/
+  
+      
+      
+      
+Use below address for connection API and test it 
+ssl://hono:hono-secret@c2e-hono-kafka-0-external:9094
+
+"ca": "-----BEGIN CERTIFICATE-----\nMIICPjCCAeOgAwIBAgIUB2vxWI9wj32OHLaABVV+iuVkdTUwCgYIKoZIzj0EAwIwUDELMAkGA1UEBhMCQ0ExDzANBgNVBAcMBk90dGF3YTEUMBIGA1UECgwLRWNsaXBzZSBJb1QxDTALBgNVBAsMBEhvbm8xCzAJBgNVBAMMAmNhMB4XDTIzMDYyNDA5MDYwMFoXDTI0MDYyMzA5MDYwMFowUzELMAkGA1UEBhMCQ0ExDzANBgNVBAcMBk90dGF3YTEUMBIGA1UECgwLRWNsaXBzZSBJb1QxDTALBgNVBAsMBEhvbm8xDjAMBgNVBAMMBWthZmthMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEM2N+LKI2aa05/7qR4p3LtL3xptiPErCIM+oCHtf656Z05LEfl94eW28UjNIZiLed2jOujmid24JrDOehUgKviqOBlzCBlDAdBgNVHQ4EFgQUiu3K+qTJPgoF5v1LaToQCDGWbSowCwYDVR0PBAQDAgOoMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBHBgNVHREEQDA+ghUqLmhvbm8ta2Fma2EtaGVhZGxlc3OCGiouaG9uby1rYWZrYS1oZWFkbGVzcy5ob25vgglsb2NhbGhvc3QwCgYIKoZIzj0EAwIDSQAwRgIhAOdxFN9a0sJsoVXgIlZ7UFTYC2zfUsoVWxZPYvBUzxgmAiEA98xEwyXPYO0NexdvlSMO3Rqne4EG1O5r4SBb1EagBsk=\n-----END CERTIFICATE-----\n",
+
+
+
+
+Please find new base URLs in below 
+
+
+Base URLS: 
+    UM: https://user-management.impressicocrm.com/um/api/v1
+    DM: https://device-management.impressicocrm.com/dm/api/v1
+    TM: https://tenant-management.impressicocrm.com/tm/api/v1
+    AM: https://app-management.impressicocrm.com/am/api/v1
+    NM: https://notification-management.impressicocrm.com/nm/api/v1
+    
+    
+a7f126ca-0ab2-11ee-be56-0242ac120002
+
+460c06a7-bffd-47d5-a5ea-4b54b42f31b1
+
+
+
+         eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJmeVEyYTJ5NDN0SWNnWUZ5aFctQWIxaTQ4VHpoWW9LY3F2N0dyV01hWnl3In0.eyJleHAiOjE2ODkzMTM3MzksImlhdCI6MTY4OTMxMzQzOSwianRpIjoiOThmOWNmYmUtZDVkYy00MWM1LWIwZWUtNGNkNjcxNmZiYmZhIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmltcHJlc3NpY29jcm0uY29tOjMyNTQxL3JlYWxtcy9Tb255IiwiYXVkIjpbIk1vYmlsZS1jbGllbnQiLCJhY2NvdW50Il0sInN1YiI6ImE3NDVhMmU0LTVhM2QtNGU0ZS1iZjA1LWU4Y2EzMTJhN2U0ZSIsInR5cCI6IkJlYXJlciIsImF6cCI6IldlYi1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiZDNhMzNkODMtYzg2OS00NTA3LWI1ZTgtZjZmZTQzZTJhMWVlIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vdXNlci1tYW5hZ2VtZW50LmltcHJlc3NpY29jcm0uY29tOjMyMzk5Il0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJNT0JJTEVfVVNFUiIsImRlZmF1bHQtcm9sZXMtaW1wcmVzc2ljby1zb255Iiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7Ik1vYmlsZS1jbGllbnQiOnsicm9sZXMiOlsiTU9CSUxFX1VTRVIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6ImQzYTMzZDgzLWM4NjktNDUwNy1iNWU4LWY2ZmU0M2UyYTFlZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiSm9oZWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIiwiZ2l2ZW5fbmFtZSI6IkpvaGViIiwiZW1haWwiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIn0.bNXNo0NSx01rvGODvwoF677SDoAnaP8Pk2HOQ7gRzuoMhpGZ4kqGdIOCvHNjYpOweYdEJXJ801V4YD30dwvdyQMtjtP49hlNUFhFlUew8qBeZXPFAX0RI_q6dS8RkeBpKdsqapOyLKvakAHTPNHY-JSVUJeOdhtsDidTQ_fkXErgfERFPbwHSQsWuESVEa4ePZcj3lMJEkVYPP1og7mGsbfce2wmyovgYvlQUdxnXFQKcEpnQSEYTljbH-mhaBLoygmCdnyrr3SwkSM7pWaJvnTkjsEr-RTWNoZwnvyKdRfIP6sGwYM-tfT9z_RA6WrvU_IzS9kYpOH4q2MyCCiQ0Q
+         
+         
+    
+     {
+    "status": "Failure",
+    "message": "ERROR: relation \"tenant_notification\" does not exist\n  Position: 13"
+}
+     
+
+
+{
+    "status": "Failure",
+    "message": "ERROR: duplicate key value violates unique constraint \"tenant_notification_pkey\"\n  Detail: Key (tenant_id)=(Sony) already exists."
+}
+
+
+User A  login and got bearer token 
+User B  login and got bearer token 
+
+By using user A bearer token can we access user B other API like, getbyID, deleteById etc.
+
+
+
+26b40d2a-b7dd-4d5b-b06d-89729f0796ad
+
+42680b48-7648-4862-ade3-4da0a110476e
+
+
+9d2e4431-c270-4e3b-b109-6d13a3d7ca1c
+
+
+
+SUPER_ADMIN_USER:
+katkuri.ramesh@Impressico.com
+Welcome@123
+
+INTERNAL_USER:
+katkuriramesh217@gmail.com
+Welcome@123
+
+
+
+
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIiwiaWF0IjoxNjk0NTg1NjI1LCJleHAiOjE2OTQ1ODc0MjV9.HajbtunyY9-XWVV-nBQNmyt0diH00-zeyZ-kvXbVXMs
+
+
+===============================================================
+Date: 14 september 2023 
+1. enabled property is present in response message in swagger but not getting in API response for delete tenant
+2. DM swagger needs to update for tenant API 
+3. NM swagger update for create tenant and exposed API key API
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+"userName": "35dba210-c285-41d6-9067-040f49b335f8",
+"password": "rj0oG!xAU"
+
+Sony:35dba210-c285-41d6-9067-040f49b335f8
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+If URL contains invalid property ID it is giving 200 response.
+If a method name is PUT and content-type is application/merge-patch+json then 500 I am getting and vice versa.
+=============================================================
+Ex: 
+If user Role:
+      MOBILE_USER: login user can access his own data 
+      CUSTOMER_SUPPORT_ROLE: login user can access all the users data 
+
+
+
+=====================================================================
+
+sudo chmod 666 /dev/ttyUSB0
+impressico@IBS-LAP-309:~$ ls -la /dev/ttyUSB0 
+
+========================================================================
+04/01/2024 
+
+
+ESP-32 MacAddress: 08:d1:f9:34:b1:dd
+
+{
+    "status": "Success",
+    "message": "Devices data added successfully",
+    "data": {
+        "deviceId": "Sony:be5db3dd-9e89-4a08-aecd-215a398a0af1"
+    }
+}
+===========================================================================
+
+
+
+17/01/2024
+
+
+-- In OTP verification screen dial pad is fluctuating top to bottom when type/delete a OTP.
+-- In change password screen can we enable/disable the Change password button just like forgot password screen.
+-- In sign up and sign In screen password text field hide password eye icon is working reverse. Kindly check with change password and forgot password screen.
+-- In change password screen if old password is invalid and click on change password button show error message on UI.
+-- In add device screen if we will not select the device type from given options and click on continue button, error message required on UI.
+-- In device setup screen if we will not select device hotspot from mobile settings and click on next button it is redirecting to next screen.
+-- In setup wi-fi for device screen if home wi-fi password is invalid it is showing Failed to add device message. 
+-- There is typo in connect device screen at top.
+
+
+================================================
+18/01/2024
+-- In signup screen if email Id is invalid it will sign up the user successfully.
+-- In feedback text box if we will comma, full stop then feedback is not submit.
+-- Create feedback and create FAQ API is not accepting comma, fullstop it is taking only alphabet and spaces.
+ 
+=================================================
+23/01/2024
+
+-- In change password screen if new password and confirm password is valid and old password is invalid and click on change password button there is no error on UI.
+-- Screen rotation is not working 
+-- In set-up wi-fi screen if home router password is invalid, Failed to add device error coming on UI but onboarded device is visible on UI.
+
+==================================================
+24/01/2024
+
+Login
+- [ ] 21 - Redirect to Dashboard/home screen on succesfull sign in -- DONE
+- [ ] Forgot password - verify with email id that is not registered -- DONE 
+- [ ] Test case with successful login and Dashboard showing user name, photo, temperature and location + devices if
+      added -- DONE
+
+My Profile
+- [ ] Delete account - after successful deletion of the account - try to login again with same account credentials -- DONE
+- [ ] Change password - user should be able to login with new password not with old password -- DONE
+- [ ] Edit profile - test case for location update , test case for successful change of photo, name n location 
+      change shown in Dashboard -- DONE
+
+Onbaard device
+- [ ] Verify add device screen - Turn on Wifi View should be shown if not connected to wifi or connected to device hotspot(in case of coming back from next screen)-- DONE
+- [ ] Test case for device Name optional - add device with this case n in Dashboard device name should be shown as Aircondition if device type is AC -- DONE
+- [ ] Verify device setup screen by click on next button - Test case to validate selected Wi-Fi is device hotspot -- DONE
+- [ ] Select wi-fi from mobile setting - Change to select device hotspot - THINGS-UNIVERSE-AC -- DONE
+- [ ] Negative case for invalid Wifi password -- DONE
+- [ ] Test Case for Looking for device screen, no device found and device found screens-- DONE
+- [ ] Onbard is success but not able to write mqtt credentials to device fails -- DONE
+
+Device details
+- [ ] Verify device capabilities screen when device is offline -- DONE
+- [ ] Add test cases for change device capabilities and same is updated in Dashboard -- DONE
+- [ ] Test case to delete device from device settings screen -- DONE
+- [ ] Test cases for dashboard device list - device name, category, temperature, switch status -- DONE
+- [ ] No need to start from onboard flow in test cases for device capabilities
+
+- [ ] Test cases for no network error toast message and error screen
+
+Issues in new build:
+1. In setup Wi-fi for device, home wi-fi password is invalid it is still onbaording a device. 
+2. In device setting, click on delete device and re-onbaord the same device, the onbaord is unsuccessful.
+3. In feedback screen, after successful submission of feedback can we redirect to setting screen instead of same screen.
+4. In edit profile, if location is empty and update profile is successful and verify the location in dashboard screen, getting weather infoormation on UI. 
+
+====================================================================
+29/01/2024
+
+-- In OTP verification screen, click on verify button when device in not connected/disconnected to internet.
+-- In change password screen, click on change password button when device is not connected/disconnected to internet.
+-- In Dashboard screen, click on device list when device is not connected/disconnected to internet.
+-- Network error message is not shown for screens under settings tab.
+-- In connect device screen, click on retry option when device is trying to connect with internet but internet is not connected.
+
+=======================================================================================
+31/01/2024
+-- In OTP verification screen, click on verify button when device in not connected/disconnected to internet. - Done
+-- In change password screen, click on change password button when device is not connected/disconnected to internet. - Done
+-- In Dashboard screen, click on device list when device is not connected/disconnected to internet.- DONE
+-- Network error message is not shown for screens under settings tab - DONE
+-- In connect device screen, click on retry option when device is trying to connect with internet but internet is not connected.-DONE
+-- In setup Wi-fi for device screen, if home wi-fi password is invalid it is still on-boarding a device. Not fixed 
+-- In the feedback screen, after successful submission of feedback can we redirect to the settings screen instead of the feedback screen.- Done
+-- In edit profile screen, if location is empty and update profile is successful and verify the location in dashboard screen, getting weather information on UI.- Done
+
+====================================================================
+Issues in new build v1.0.16
+
+-- In setup Wi-fi for device screen, if home wi-fi password is invalid it is still on-boarding a device.
+-- In the device setting screen, click on delete device and re-onboard the same device, the onboard is unsuccessful.
+-- In connect device screen if setting up device is uncheck while connecting to device(MQTT credentials not written successfully) 
+
+=====================================================================
+Date:12/01/2024
+ESP-32
+{
+    "status": "Success",
+    "message": "Devices data added successfully",
+    "data": {
+        "deviceId": "Sony:31df9746-7513-492f-a93a-c167a3516d57"
+    }
+}
+=======================================================================
+Date:14/02/2024
+
+-- Test device onbord from mobile app and check the functionality.
+===============================================================================
+Date: 16/02/2024
+
+-- New issue while onboarding the device from mobile app, policy not found error on onboard device API in postman. Ditto server is not responding. at 10:30 am 
+-- Issue is fixed and 3 round smoke test has been done at 1:10PM.
+
+=======================================================================
+Date: 19/02/2024
+
+-- Smoke test for Thing universe mobile app and onboard the device.
+
+=======================================================================
+Date: 20/02/2024
+-- 
+
+python3 -m esptool --chip esp32 erase_flash
+
+
+
+dm.properties.iot.honoBaseUrl=https://c2e-device-registry-external.impressicocrm.com:31444
+dm.properties.iot.dittoBaseUrl=http://c2e-nginx.impressicocrm.com:30080
+
+=========================================================================
+Date: 27/02/2024
+
+{
+    "status": "Success",
+    "message": "Devices data added successfully",
+    "data": {
+        "deviceId": "Sony:ebc56095-868c-47ca-9b64-911bd203fe21"
+    }
+}
+
+
+=================================================================
+
+-- Maintain emotional journals.
+-- Recent criticism, how you better deal with that ?
+-- What makes pointers
+1. dont be defensive and aggresive 
+
+helm repo add eclipse-iot https://www.eclipse.org/packages/charts
+
+======================================================================
+1 I have made a decision for my skill improvement, Whenever I'll get free time I'll use this time for my skill improvement.
+
+2. I seek suggestions from experienced person, sechdule the time for for training, resources I have verified like youtube or external resources
+3. immediate effects 			Future effects
+-- Utilizing my time in a good way		-- Skill improve 
+-- Overthink is reduce 			-- Helpful for my career
+--  
+
+4. It was a good decision because it will help for my career growth and I'll familier with new technology as well.
+
+
+=====================================
+
+user A Token (GuestTenant)
+eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCa1lGM2RrNTB6aWJvTS1lV1RmOFFlVVdBRHFiQ0d0cFBRam9xY2Vmd2dnIn0.eyJleHAiOjE3MTA0ODU0MTMsImlhdCI6MTcxMDMxMjYxMywianRpIjoiMGVkYzQ3YzItMmI1ZS00MDgxLWIxZDctNWRmZjNlMWUwYzhkIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmltcHJlc3NpY29jcm0uY29tOjMyMzUwL3JlYWxtcy9HdWVzdFRlbmFudCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI3ZmY2N2Q0Mi1mMTRhLTRhOTAtOTdjNC05MzcyZGRiNGM1MjgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJHdWVzdC1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiMGY3MTFmZjctMTcyNy00YTViLWJhNDMtYjhkMzk5YjdhODcyIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJodHRwczovL2Rldi13ZWItYXBwLmltcHJlc3NpY29jcm0uY29tIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJHVUVTVF9VU0VSIiwiZGVmYXVsdC1yb2xlcy1ndWVzdHRlbmFudCIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJHdWVzdC1jbGllbnQiOnsicm9sZXMiOlsiR1VFU1RfVVNFUiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiMGY3MTFmZjctMTcyNy00YTViLWJhNDMtYjhkMzk5YjdhODcyIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiSm9oZWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIiwiZ2l2ZW5fbmFtZSI6IkpvaGViIiwiZW1haWwiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIn0.iqh9fCPJZE_djNQlF5Toz-9jquSCZdNeGk_CHTnMutCDsmpBHwXRBhy6awZBSDasCw6uOdboIGOUx9f9bfQ2rxHcyGD140f-PDH09ANuiMEb9wf-VvyDJ8gpOZCED3Ytx0Jw3UYfzLYAqDiHf14r6uUSrnWnEH_juo0qffsgp9hl8jc10kGnF3rBca33LmgriCFRV3mSf9S1Rt1Hpo0cULhtfOAh_SOXQ5vyOr3QNtzlqUxgouttkkxvMsGeWYhYwsIouRZizsl53zz6LS62SFBRyvNKEqekiFSofQrd-IDvfbaC7NFyIxw0QzN92YbgUZsQTaoQ9gDRkXuqnMQoFQ
+
+User B Token (GuestTenant)
+
+User ID: 6b46be7d-12da-467d-8d34-915667d11418
+
+
+eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCa1lGM2RrNTB6aWJvTS1lV1RmOFFlVVdBRHFiQ0d0cFBRam9xY2Vmd2dnIn0.eyJleHAiOjE3MTA0ODU3MjksImlhdCI6MTcxMDMxMjkyOSwianRpIjoiYTE4MTBmMGYtNzZiZC00ODI0LWE3Y2EtZGNlMzUwNzdjODMzIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmltcHJlc3NpY29jcm0uY29tOjMyMzUwL3JlYWxtcy9HdWVzdFRlbmFudCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2YjQ2YmU3ZC0xMmRhLTQ2N2QtOGQzNC05MTU2NjdkMTE0MTgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJHdWVzdC1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiMzFmNDYwZTItNWY3YS00YzQ4LThjMzUtYmY5YTEyYzgwN2M2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJodHRwczovL2Rldi13ZWItYXBwLmltcHJlc3NpY29jcm0uY29tIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJHVUVTVF9VU0VSIiwiZGVmYXVsdC1yb2xlcy1ndWVzdHRlbmFudCIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJHdWVzdC1jbGllbnQiOnsicm9sZXMiOlsiR1VFU1RfVVNFUiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiMzFmNDYwZTItNWY3YS00YzQ4LThjMzUtYmY5YTEyYzgwN2M2IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiSm9oZWIgRGFuaSIsInByZWZlcnJlZF91c2VybmFtZSI6ImpvaGViLmRhbmkrMUBpbXByZXNzaWNvLmNvbSIsImdpdmVuX25hbWUiOiJKb2hlYiBEYW5pIiwiZW1haWwiOiJqb2hlYi5kYW5pKzFAaW1wcmVzc2ljby5jb20ifQ.OgVbX2jNdXuRecrxnYxtFwtvvMjme2ao_tEUbLbj7rzHpIq2WlmUy6X08o77fOY8xQuEl-vW0zlPOaUyuYqy9oint_gDY8DEGCzFbtBalb2VXzYxKpEPLW6aW4aNfZG_t4N26dnXsVYPrh_RNocxXg156IzaN-G17gVF1VBcTvUy2Ki0dzVcRXdhypMZOk_KY48iytISB7rPfz-cJE1-JyEN7XS0frr_Sv1C7CW9OtjP7pgQ9y2Fsxpfu6TcDLhBf-rGbK7HH00YxO_Cr4ygPqXN_25Y2dsecLUPxyJ-CxeANrED1Gb8yNIe2oOiHgcsabJ9Hmysl-CPH5vOvJhgwQ
+
+=================================================================
+eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCa1lGM2RrNTB6aWJvTS1lV1RmOFFlVVdBRHFiQ0d0cFBRam9xY2Vmd2dnIn0.eyJleHAiOjE3MTEwMDU3MjcsImlhdCI6MTcxMDgzMjkyNywianRpIjoiYmYwMTIwNDMtNjczYi00NzBkLTk4MjgtODZjM2I4NjVmMGQyIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmltcHJlc3NpY29jcm0uY29tOjMyMzUwL3JlYWxtcy9HdWVzdFRlbmFudCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2YjQ2YmU3ZC0xMmRhLTQ2N2QtOGQzNC05MTU2NjdkMTE0MTgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJHdWVzdC1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiYjIxZGRkMTYtOWI4Yi00MWNkLWE1OTktMzUwYzBhZDg1ZjZlIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJodHRwczovL2Rldi13ZWItYXBwLmltcHJlc3NpY29jcm0uY29tIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJHVUVTVF9VU0VSIiwiZGVmYXVsdC1yb2xlcy1ndWVzdHRlbmFudCIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJHdWVzdC1jbGllbnQiOnsicm9sZXMiOlsiR1VFU1RfVVNFUiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiYjIxZGRkMTYtOWI4Yi00MWNkLWE1OTktMzUwYzBhZDg1ZjZlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiSm9oZWIgRGFuaSIsInByZWZlcnJlZF91c2VybmFtZSI6ImpvaGViLmRhbmkrMUBpbXByZXNzaWNvLmNvbSIsImdpdmVuX25hbWUiOiJKb2hlYiBEYW5pIiwiZW1haWwiOiJqb2hlYi5kYW5pKzFAaW1wcmVzc2ljby5jb20ifQ.JG6hnnbWy3G0GgrjvqJ-6trgUgVKjceqczz3g4AGSPHRUrAtoVYXqSU42bamIaRTwlIi9MrW9M8GYRZPFUOXclgN8RAsuq4zJ4zOjDW2t-EPZktwlLPi1HSQt6hvOH2FNQaQxgsQRg7pj8nIdkVKn4j-T1JBtdH1Tz9zG_UR13_sLJEDIqwjGNKCkYQjRzdbvXOtCT85Kn1KtQXgicjZ85A4csO_f0AQl9W4E40Dm5PDyHk7LfHrmZC4dvxex2JMz3_XicVBRc-d8jMX1e6Laht2iXI88G5p1eib9r29vD55LL4HsxDqtZ2HMR501r-9F9LqMfR-92VUPXuDuGMAFg
+
+{
+    "status": "Success",
+    "message": "Device onboarded successfully",
+    "data": {
+        "userName": "cffb5841-e7be-46ab-9f88-8e40db9253de",
+        "password": "bpDD2F6i@"
+    }
+}
+
+
+eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCa1lGM2RrNTB6aWJvTS1lV1RmOFFlVVdBRHFiQ0d0cFBRam9xY2Vmd2dnIn0.eyJleHAiOjE3MTEwMDU3ODksImlhdCI6MTcxMDgzMjk4OSwianRpIjoiNzg4MDBmY2QtZGE3Ny00ZmUwLThlYzktY2M4M2FlMTM0OGVjIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmltcHJlc3NpY29jcm0uY29tOjMyMzUwL3JlYWxtcy9HdWVzdFRlbmFudCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI3ZmY2N2Q0Mi1mMTRhLTRhOTAtOTdjNC05MzcyZGRiNGM1MjgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJHdWVzdC1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiZGEwMjkyMGUtZDcwYi00MWI4LTkyNjktMDc2ZWFiZTQ1MDY1IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJodHRwczovL2Rldi13ZWItYXBwLmltcHJlc3NpY29jcm0uY29tIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJHVUVTVF9VU0VSIiwiZGVmYXVsdC1yb2xlcy1ndWVzdHRlbmFudCIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJHdWVzdC1jbGllbnQiOnsicm9sZXMiOlsiR1VFU1RfVVNFUiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiZGEwMjkyMGUtZDcwYi00MWI4LTkyNjktMDc2ZWFiZTQ1MDY1IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiSm9oZWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIiwiZ2l2ZW5fbmFtZSI6IkpvaGViIiwiZW1haWwiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIn0.HyF8ZBVm5P2y2wBzSZaVOPXJM53ESmpwApSRKht_e7yWMGe-qyr99SiO9HzeEb8Bpgl8nrpwhzebYJ0E2kc5EXvC3R3IphbyoAJoVJBMuaby6oOpnb2HZ9JmyAlJu5YEEstzLl6ai1VYHypI1R86w9DFggGyBfAtu_fq14Yt9uPtkfUNvI1fzrj72zBc2mJHSu82slvx0kRtMHfVTdVveJavTv86geGb5JKurNGOqv3PU3K0PtI-fSJwN_eSv8M70RQo3ERqxZDnLeBrMoyxRAu2Gkh2mBiP8KvjofBOAPgLT5U_SXcu9D6fe4CnDHqHag9jcoloyPmNPklqgaa6RA
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+{
+    "status": "Success",
+    "message": "Token details fetched successfully.",
+    "data": {
+        "realm_access": {
+            "roles": [
+                "GUEST_USER",
+                "default-roles-guesttenant",
+                "offline_access",
+                "uma_authorization"
+            ],
+            "verify_caller": null
+        },
+        "name": "Joheb",
+        "given_name": "Joheb",
+        "preferred_username": "joheb.dani@impressico.com",
+        "userName": "joheb.dani@impressico.com",
+        "email_verified": false,
+        "userId": "7ff67d42-f14a-4a90-97c4-9372ddb4c528",
+        "exp": 1710485413
+    }
+}
+Token 1: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCa1lGM2RrNTB6aWJvTS1lV1RmOFFlVVdBRHFiQ0d0cFBRam9xY2Vmd2dnIn0.eyJleHAiOjE3MTA0ODU0MTMsImlhdCI6MTcxMDMxMjYxMywianRpIjoiMGVkYzQ3YzItMmI1ZS00MDgxLWIxZDctNWRmZjNlMWUwYzhkIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmltcHJlc3NpY29jcm0uY29tOjMyMzUwL3JlYWxtcy9HdWVzdFRlbmFudCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI3ZmY2N2Q0Mi1mMTRhLTRhOTAtOTdjNC05MzcyZGRiNGM1MjgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJHdWVzdC1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiMGY3MTFmZjctMTcyNy00YTViLWJhNDMtYjhkMzk5YjdhODcyIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJodHRwczovL2Rldi13ZWItYXBwLmltcHJlc3NpY29jcm0uY29tIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJHVUVTVF9VU0VSIiwiZGVmYXVsdC1yb2xlcy1ndWVzdHRlbmFudCIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJHdWVzdC1jbGllbnQiOnsicm9sZXMiOlsiR1VFU1RfVVNFUiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiMGY3MTFmZjctMTcyNy00YTViLWJhNDMtYjhkMzk5YjdhODcyIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiSm9oZWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIiwiZ2l2ZW5fbmFtZSI6IkpvaGViIiwiZW1haWwiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIn0.iqh9fCPJZE_djNQlF5Toz-9jquSCZdNeGk_CHTnMutCDsmpBHwXRBhy6awZBSDasCw6uOdboIGOUx9f9bfQ2rxHcyGD140f-PDH09ANuiMEb9wf-VvyDJ8gpOZCED3Ytx0Jw3UYfzLYAqDiHf14r6uUSrnWnEH_juo0qffsgp9hl8jc10kGnF3rBca33LmgriCFRV3mSf9S1Rt1Hpo0cULhtfOAh_SOXQ5vyOr3QNtzlqUxgouttkkxvMsGeWYhYwsIouRZizsl53zz6LS62SFBRyvNKEqekiFSofQrd-IDvfbaC7NFyIxw0QzN92YbgUZsQTaoQ9gDRkXuqnMQoFQ
+===================================================================================================
+
+{
+    "status": "Success",
+    "message": "Token details fetched successfully.",
+    "data": {
+        "realm_access": {
+            "roles": [
+                "GUEST_USER",
+                "default-roles-guesttenant",
+                "offline_access",
+                "uma_authorization"
+            ],
+            "verify_caller": null
+        },
+        "name": "Joheb Dani",
+        "given_name": "Joheb Dani",
+        "preferred_username": "joheb.dani+1@impressico.com",
+        "userName": "joheb.dani+1@impressico.com",
+        "email_verified": false,
+        "userId": "6b46be7d-12da-467d-8d34-915667d11418",
+        "exp": 1711005727
+    }
+}
+        
+Token 2: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCa1lGM2RrNTB6aWJvTS1lV1RmOFFlVVdBRHFiQ0d0cFBRam9xY2Vmd2dnIn0.eyJleHAiOjE3MTEwMDU3MjcsImlhdCI6MTcxMDgzMjkyNywianRpIjoiYmYwMTIwNDMtNjczYi00NzBkLTk4MjgtODZjM2I4NjVmMGQyIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmltcHJlc3NpY29jcm0uY29tOjMyMzUwL3JlYWxtcy9HdWVzdFRlbmFudCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2YjQ2YmU3ZC0xMmRhLTQ2N2QtOGQzNC05MTU2NjdkMTE0MTgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJHdWVzdC1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiYjIxZGRkMTYtOWI4Yi00MWNkLWE1OTktMzUwYzBhZDg1ZjZlIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJodHRwczovL2Rldi13ZWItYXBwLmltcHJlc3NpY29jcm0uY29tIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJHVUVTVF9VU0VSIiwiZGVmYXVsdC1yb2xlcy1ndWVzdHRlbmFudCIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJHdWVzdC1jbGllbnQiOnsicm9sZXMiOlsiR1VFU1RfVVNFUiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiYjIxZGRkMTYtOWI4Yi00MWNkLWE1OTktMzUwYzBhZDg1ZjZlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiSm9oZWIgRGFuaSIsInByZWZlcnJlZF91c2VybmFtZSI6ImpvaGViLmRhbmkrMUBpbXByZXNzaWNvLmNvbSIsImdpdmVuX25hbWUiOiJKb2hlYiBEYW5pIiwiZW1haWwiOiJqb2hlYi5kYW5pKzFAaW1wcmVzc2ljby5jb20ifQ.JG6hnnbWy3G0GgrjvqJ-6trgUgVKjceqczz3g4AGSPHRUrAtoVYXqSU42bamIaRTwlIi9MrW9M8GYRZPFUOXclgN8RAsuq4zJ4zOjDW2t-EPZktwlLPi1HSQt6hvOH2FNQaQxgsQRg7pj8nIdkVKn4j-T1JBtdH1Tz9zG_UR13_sLJEDIqwjGNKCkYQjRzdbvXOtCT85Kn1KtQXgicjZ85A4csO_f0AQl9W4E40Dm5PDyHk7LfHrmZC4dvxex2JMz3_XicVBRc-d8jMX1e6Laht2iXI88G5p1eib9r29vD55LL4HsxDqtZ2HMR501r-9F9LqMfR-92VUPXuDuGMAFg
+=================================================================================================================
+eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCa1lGM2RrNTB6aWJvTS1lV1RmOFFlVVdBRHFiQ0d0cFBRam9xY2Vmd2dnIn0.eyJleHAiOjE3MTExMDE4NDYsImlhdCI6MTcxMDkyOTA0NiwianRpIjoiNjFiYmNlY2EtNjQ1Ny00OTQ4LWJhODUtZWY4OWYwNzkxNjE2IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmltcHJlc3NpY29jcm0uY29tOjMyMzUwL3JlYWxtcy9HdWVzdFRlbmFudCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI3ZmY2N2Q0Mi1mMTRhLTRhOTAtOTdjNC05MzcyZGRiNGM1MjgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJHdWVzdC1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiMGIwZTc3ZjItYjY2My00ZDlhLWI3NTgtMWM1ZmVjODcwM2RkIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJodHRwczovL2Rldi13ZWItYXBwLmltcHJlc3NpY29jcm0uY29tIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJHVUVTVF9VU0VSIiwiZGVmYXVsdC1yb2xlcy1ndWVzdHRlbmFudCIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJHdWVzdC1jbGllbnQiOnsicm9sZXMiOlsiR1VFU1RfVVNFUiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiMGIwZTc3ZjItYjY2My00ZDlhLWI3NTgtMWM1ZmVjODcwM2RkIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiSm9oZWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIiwiZ2l2ZW5fbmFtZSI6IkpvaGViIiwiZW1haWwiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIn0.Hc9tr37dI-5mmwzqGl-QFjKbfkGnmtQukryoNCPeRAQ9E5DMjiFRHxX_dmv7_tx68cBBGtm3LYvMRvx-FDMuKZF9wbKKXQlSUDusP42XcM5EqAaO_7zXAm805TCRFk1nBi295H6xc3ISFdrDXP2N43QbJqe0jzHNy1BS1zh6U1NUyzfQds0XtQ54Cn4hFPAdo2ewoB0McKsxFqduMeXBKKTLSdkOKcOK3u5AxUgOPpbBYU1X7hbEiTqStGsgNbS7nwtnOJSM5a2jASYiD4jGCUcL3NXdzO5tTrIsTu-VzZUqFNFFUsPEU9EnJVHGspkHDQD2b3totYQecT4OXMYOkg
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+User A token:   "userId": "7ff67d42-f14a-4a90-97c4-9372ddb4c528",
+eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCa1lGM2RrNTB6aWJvTS1lV1RmOFFlVVdBRHFiQ0d0cFBRam9xY2Vmd2dnIn0.eyJleHAiOjE3MTE2MDg0NzYsImlhdCI6MTcxMTQzNTY3NiwianRpIjoiZDFiMWU2ZWMtZTllZi00YjJjLWJkYzYtYzYzZjFiZDU2NTkyIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmltcHJlc3NpY29jcm0uY29tOjMyMzUwL3JlYWxtcy9HdWVzdFRlbmFudCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI3ZmY2N2Q0Mi1mMTRhLTRhOTAtOTdjNC05MzcyZGRiNGM1MjgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJHdWVzdC1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiYTU4YmVmZTMtNjllOC00NTQ0LTg3MDUtZjJlNzE2ZTZlMTM0IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJodHRwczovL2Rldi13ZWItYXBwLmltcHJlc3NpY29jcm0uY29tIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJHVUVTVF9VU0VSIiwiZGVmYXVsdC1yb2xlcy1ndWVzdHRlbmFudCIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJHdWVzdC1jbGllbnQiOnsicm9sZXMiOlsiR1VFU1RfVVNFUiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiYTU4YmVmZTMtNjllOC00NTQ0LTg3MDUtZjJlNzE2ZTZlMTM0IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiSm9oZWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIiwiZ2l2ZW5fbmFtZSI6IkpvaGViIiwiZW1haWwiOiJqb2hlYi5kYW5pQGltcHJlc3NpY28uY29tIn0.VTVvyuUXWjSONkpXM_rlPq9MrfV4JZHYWmNjQyDDI8sMKR8AmtzwHBLYvH72Pzbmnxwklgqbo3KmkS6bZlBSU8F7by4CzhIjUOYuSgH1hF8ONkdC1_b8YTyK1mcMculV53IWsoYXGY90g7oBj7BLHZxAeIw603FmNBKCp3ygbgYHn8bYCzZ9Kfmn6Yskdtrbbt_iJnOtp9d8wP3k2--SyO_9e5vYdCk3vnzdgxMERpzKh39bKPCSZ-b4wWphiTxs18B6PDolfPWTaIyfJhTng4Kf7N2q4kaE3jbSgoRaI4cOA9x25KmlA0G1R0Clo-lh6uLUWFtbWZxrtngdgB19Tw
+
+
+User B token:  "userId": "6b46be7d-12da-467d-8d34-915667d11418",
+
+eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJCa1lGM2RrNTB6aWJvTS1lV1RmOFFlVVdBRHFiQ0d0cFBRam9xY2Vmd2dnIn0.eyJleHAiOjE3MTE2MDg1NjEsImlhdCI6MTcxMTQzNTc2MSwianRpIjoiNGQ3MzFjZTctZmVhOC00ZWNkLTkxOTUtYzA2YTlhODA4ZjI2IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmltcHJlc3NpY29jcm0uY29tOjMyMzUwL3JlYWxtcy9HdWVzdFRlbmFudCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2YjQ2YmU3ZC0xMmRhLTQ2N2QtOGQzNC05MTU2NjdkMTE0MTgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJHdWVzdC1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiMjFlMDlmZTAtZGM0Ny00ZmE2LWFhMzItYTQ3YTMwNjQ3NjkxIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJodHRwczovL2Rldi13ZWItYXBwLmltcHJlc3NpY29jcm0uY29tIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJHVUVTVF9VU0VSIiwiZGVmYXVsdC1yb2xlcy1ndWVzdHRlbmFudCIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJHdWVzdC1jbGllbnQiOnsicm9sZXMiOlsiR1VFU1RfVVNFUiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiMjFlMDlmZTAtZGM0Ny00ZmE2LWFhMzItYTQ3YTMwNjQ3NjkxIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiSm9oZWIgRGFuaSIsInByZWZlcnJlZF91c2VybmFtZSI6ImpvaGViLmRhbmkrMUBpbXByZXNzaWNvLmNvbSIsImdpdmVuX25hbWUiOiJKb2hlYiBEYW5pIiwiZW1haWwiOiJqb2hlYi5kYW5pKzFAaW1wcmVzc2ljby5jb20ifQ.nygib1vPVhI1LoVNEOC52kF2EakskUS0PRwdr-zmvSIkqk2ovEcEpkG1jwgNGShSuWaB2dqqLRuIg6jrKLV5-fN9gzVDfeMpmAE-sXGFl4qnMoPwoQ30o121UbNVMRKKOXlz7NInSLlh9ukonIhPtlYq-D2GiLQFzaZcicPBkONW8Oa-xGIDjaQtnBKejOX9iZfHaL_hYG4nPHcSvHtIUmE4w29C42RKUz3pdsW57nDMz8QmT5D_9pwOETGuhcRVehV_5EMBj3AXs7OZYyDzBWdhvQx33k3tu6U1FyTvRiS5_OmhuwT_3oDgf0DJcMWmRL0vIcGpOoTAhsOSdhQxhw
+
+UPDATE user SET authentication_string=password('welcome123') WHERE user='root';
+============================================================================
+
+{
+    "status": "Success",
+    "message": "Devices data added successfully",
+    "data": {
+        "deviceId": "Sony:cf7845d4-0cf9-4758-857d-ca17b148f93e"
+    }
+}
+==================================================================================
+Date: 19/04/2024
+-- GuestTenant:28edde42-3d28-4b6e-be9f-d10402adc95b Found 
+-- GuestTenant:558d8583-474b-4d94-8a93-6280a2a5806c Found
+-- GuestTenant:37118f56-ab8a-4624-a78d-11005750ab1a Found
+-- GuestTenant:3891c769-4c11-4f5a-ac37-f691f10837f9 Found
+-- GuestTenant:5b19d682-5271-4f99-8e0b-2be83651ebac Found
+-- GuestTenant:bff5c986-78df-43e4-bf10-b0049b4cd765 Not Found
+-- GuestTenant:92e3481d-38b4-4981-b39e-025ef4eb9ec9 Not Found
+-- GuestTenant:f031151f-dca1-4b58-a18d-121d6d6ac39c Not Found
+-- GuestTenant:a502134e-d040-46c9-bba1-1c99b0ac40a7 Not found
+-- GuestTenant:9d4f223e-9d0b-4f23-9463-8d5b7e316477 Not found
+-- GuestTenant:bd0a06cc-8890-45e1-9b4b-e0eae88fd2ea Not found 
+-- GuestTenant:bde68df7-dff8-4140-a97c-b24c8fcb73ae Not Found 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

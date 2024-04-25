@@ -1,0 +1,21 @@
+TestCaseNo,TenantID,TestDescription,TestCaseType,Accept_14,Content_14,ExpectedCode_14,ExpectedResponse_14,
+TC_AM_93,Impressico28june,Verify delete tickets by ID with all valid input,Positive,application/json,application/json,200,"{
+""status"": ""Success"",
+""message"": ""Ticket deleted Successfully.""
+}",
+TC_AM_96,Testing_25,Verify delete tickets by ID with unregister tenant ID ,Negative,application/json,application/json,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}",
+TC_AM_97,,Verify delete tickets by ID when tenant ID field is missing in request header ,Negative,application/json,application/json,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}",
+TC_AM_98,Impressico28june,Verify delete tickets by ID when accept key value is invalid in request headers ,Negative,application/js,application/json,406,,"
+{
+""type"": ""about:blank"",
+""title"": ""Not Acceptable"",
+""status"": 406,
+""detail"": ""(.*?)"",
+""instance"": ""/am/api/v1/tickets/(.+)""
+}"

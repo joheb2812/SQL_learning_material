@@ -1,0 +1,41 @@
+minikube delete #deleting the cluster 
+minikube start --cpus 4 --memory 9192 --disk-size 40000
+minikube tunnel 
+minikube stop 
+minikube status
+minikube dashboard 
+minikube addons enable metrics-server
+minikube image pull docker.io/eclipse/ditto-gateway:3.4.0
+minikube image ls
+minikube service list 
+
+
+#Creating a namespace  
+kubectl create namespace cloud2edge
+
+kubectl describe pod c2e-ditto-nginx-6666784876-9lsr7 -n cloud2edge
+kubectl logs -f pod_name -n cloud2edge
+kubectl --tail 100 logs pod_name -n  cloud2edge
+kubectl delete pod pod_name -n cloud2edge
+
+kubectl delete pod c2e-service-command-router-7798847975-6cpz7 -n cloud2edge
+
+#edit the pods config
+kubectl get deployments -n cloud2edge
+kubectl edit deployment c2e-ditto-nginx -n cloud2edge
+kubectl rollout restart deployment c2e-ditto-nginx -n cloud2edge
+kubectl edit pod podName -n cloud2edge
+
+
+#install packages 
+helm install -n cloud2edge --wait --timeout 30m c2e eclipse-iot/cloud2edge
+helm repo list 
+helm repo remove eclipse-iot
+helm search repo
+helm repo update
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+TestCaseNo,TenantID,TestDescription,TestCaseType,accept_8,Content_8,ExpectedCode_8,ExpectedResponse_8,
+TC_AM_175,Impressico28june,Verify that API response is Successful if all headers and payload is accurate and as per req.,Positive,application/json,application/json,200,"{
+""status"": ""Success"",
+""message"": ""Faq details fetched successfully."",
+""data"": {
+""id"": ""(.+)"",
+""tenantId"": ""(.+?)"",
+""question"": ""(.+?)"",
+""answer"": ""(.+?)"",
+""faq_order"": ""(.+)"",
+""category"": ""web""
+}
+}",
+TC_AM_176,Impressico28june,"Verify that api is not executed successfully , when inavild accept type is present",Negative,application/js,application/json,406,,"{
+""type"": ""about:blank"",
+""title"": ""Not Acceptable"",
+""status"": 406,
+""detail"": ""(.*?)"",
+""instance"": ""/am/api/v1/faqs/(.+)""
+}"
+TC_AM_177,testing_25,"Verify that api response is according to req. after passing unregistered
+tenant name as header",Negative,application/json,application/json,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId = (.+?) does not exists""
+}",
+TC_AM_178,,"Verify that api response is according to req. 
+with missing tenant header",Negative,application/json,application/json,404,"{
+  ""status"": ""Failure"",
+  ""message"": ""Tenant validation Failed !! tenantId =  does not exists""
+}",
+TC_AM_179,Impressico28june,Verify that API reponse is negative for invalid category param,Negative,application/json,application/json,404,"{
+""status"": ""Failure"",
+""message"": ""please provide a valid category""
+}",
+TC_AM_180,Impressico28june,Verify that API reponse is negative for Missing category param,Negative,application/json,application/json,404,"{
+""type"": ""about:blank"",
+""title"": ""Bad Request"",
+""status"": 400,
+""detail"": ""Required parameter 'category' is not present."",
+""instance"": ""/am/api/v1/faqs/(.+)""
+}",
